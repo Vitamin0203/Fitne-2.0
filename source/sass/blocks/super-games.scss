@@ -1,0 +1,159 @@
+.super-games {
+  padding: 120px 103px 106px;
+
+  @include vp-1200 {
+    padding: 100px 45px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px 63px;
+  }
+}
+
+.container__super-games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ed0233;
+  color: $color-default-white;
+  overflow: hidden;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.container__games {
+  padding: 85px 79px 87px;
+
+  @include vp-1200 {
+    padding: 51px 45px;
+  }
+
+  @include vp-767 {
+    padding: 50px 44px 51px;
+  }
+}
+
+.container__games-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__games-text {
+  font-family: "Alumni Sans";
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  text-align: start;
+  padding-left: 10px;
+  margin: 0;
+  padding-right: 50px;
+
+  @include vp-1200 {
+  font-size: 48px;
+  line-height: 96%;
+  letter-spacing: 1.44px;
+  padding-right: 29px;
+  }
+}
+
+.container__games-date{
+  padding-right: 36px;
+}
+
+.games__header {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  text-align: start;
+  padding-bottom: 13px;
+  border-bottom: 1px solid $color-default-white;
+
+  @include vp-1200 {
+  padding-bottom: 7px;
+  font-size: 12px;
+  }
+}
+
+.container__period {
+  display: flex;
+  align-items: center;
+}
+
+.games__time {
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+
+  @include vp-1200 {
+  font-size: 24px;
+  }
+}
+
+.games__period {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding-left: 3px;
+
+  @include vp-1200 {
+    font-size: 10px;
+  }
+}
+
+.container__annual {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 55px;
+
+  @include vp-1200 {
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 36px;
+  }
+}
+
+.btn__games {
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 29px 0;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid $color-default-white;
+
+  @include vp-1200 {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  padding: 16px 53px;
+  }
+}
+
+.container__games-img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.games__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

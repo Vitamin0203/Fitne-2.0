@@ -3,11 +3,10 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -23,6 +22,22 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/video";
+@import "blocks/main-conteiner";
+@import "blocks/container-gym";
+@import "blocks/subscription-container";
+@import "blocks/super-games";
+@import "blocks/container-trainer";
+@import "blocks/container-advantages";
+@import "blocks/stock-container";
+@import "blocks/feedback-container";
+@import "blocks/contacts-container";
+@import "blocks/container-footer";
+@import "blocks/faq-container";
+@import "blocks/container-reviews";
+
+
 
 // ---------------------------------
 

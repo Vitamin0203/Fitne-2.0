@@ -43,4 +43,4 @@ const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, c
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
 const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
 
-export { createWebp as webp, build, start, dev};
+export {createWebp as webp, build, start, dev};

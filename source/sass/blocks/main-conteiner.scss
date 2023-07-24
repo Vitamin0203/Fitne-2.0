@@ -1,0 +1,88 @@
+.main__container {
+  position: relative;
+}
+
+.container__text {
+  padding: 49px 85px 0 63px;
+  text-align: start;
+
+  @include vp-1200 {
+    text-align: center;
+    padding: 0 88px 50px 88px;
+  }
+
+  @include vp-767 {
+    text-align: start;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.main-header {
+  color: #102654;
+  font-family: "Alumni Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin: 0;
+
+  @include vp-1200 {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  }
+}
+
+.main-text {
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 55px;
+
+  @include vp-1200 {
+  padding-top: 6px;
+  padding-bottom: 50px;
+  }
+
+  @include vp-767 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  }
+}
+
+.main-title {
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0;
+
+  @include vp-767 {
+    padding-right: 32px;
+  }
+}
+
+.main-title__text {
+  @include vp-1200 {
+    display: none;
+  }
+}

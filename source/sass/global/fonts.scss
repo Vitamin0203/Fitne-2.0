@@ -1,8 +1,37 @@
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: 600;
+  font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/alumnisans-semibold.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src: url("../fonts/rouble.woff") format("woff");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Bebas Neue Family";
+
+  font-display: swap;
+  src: url("../fonts/bebasneue-bold.woff2") format("woff2");
 }

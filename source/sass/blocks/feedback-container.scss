@@ -1,0 +1,116 @@
+.feedback {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1200 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.feedback__form{
+  background-color: #102654;
+  padding: 56px 170px 70px 103px;
+
+  @include vp-1200 {
+    padding: 70px 163px 70px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
+
+.feedback__form-header {
+  color: $color-default-white;
+  font-family: "Alumni Sans";
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 156%;
+  letter-spacing: 1.62px;
+  margin: 0;
+
+  @include vp-1200 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+  }
+}
+
+.feedback__form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+  @include vp-1200 {
+    grid-gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+}
+
+.feedback__form-group {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 30px;
+
+  @include vp-767 {
+    padding-bottom: 40px;
+  }
+}
+
+.feedback__form-input {
+  width: 100%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background-color: transparent;
+  outline: none;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-default-white;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid $color-default-white;
+    padding-top: 10px;
+    color: transparent;
+  }
+}
+
+.feedback__form-label {
+  position: absolute;
+  top: 0;
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.feedback__form-btn {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  justify-content: center;
+  width: 100%;
+  padding: 21px 0;
+  background-color: transparent;
+  border: 3px solid $color-default-white;
+}

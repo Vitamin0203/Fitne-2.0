@@ -1,0 +1,274 @@
+.subscription {
+  position: relative;
+  background: #F8F9FC;
+  padding: 120px 103px;
+  overflow: visible;
+
+  @include vp-1200 {
+    padding: 100px 163px;
+  }
+
+  @include vp-767 {
+    padding: 63px 15px 70px;
+  }
+}
+
+.ubscription__container {
+  position: relative;
+  z-index: 2;
+}
+
+.container__months {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription__header {
+  color: #102654;
+  font-family: "Alumni Sans";
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  margin: 0;
+  padding-bottom: 25px;
+
+  @include vp-1200 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1.26px;
+  padding-bottom: 26px;
+  }
+
+  @include vp-767 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  padding-bottom: 27px;
+  }
+}
+
+.container__months-list {
+  color: #102654;
+  position: relative;
+  width: 341px;
+  margin: auto;
+
+  @include vp-1200 {
+    width: 332px;
+  }
+
+  @include vp-767 {
+    width:100%;
+  }
+
+  &::before {
+   content: "";
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: rgba(16, 38, 84, 0.50);
+   bottom: 0;
+  }
+}
+
+.subscription__tabs-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.months-list {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: 0.5;
+  padding-bottom: 22px;
+
+  @include vp-1200 {
+  font-size: 18px;
+  }
+
+  @include vp-767 {
+  font-size: 16px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+      bottom: 0;
+    }
+  opacity: 1;
+  }
+}
+
+.subscription__list {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 0;
+  margin: 0;
+  padding-top: 39px;
+  list-style-type: none;
+  text-align: center;
+
+
+  @include vp-1200 {
+  grid-template-columns: 1fr;
+  padding-top: 45px;
+  }
+
+  @include vp-767 {
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+  padding-top: 45px;
+  }
+}
+
+.subscription__item {
+  background-color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 68px;
+  border: 7px solid $color-default-white;
+
+  @include vp-767 {
+  padding-bottom: 55px;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(to right top,rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
+    border-image-slice: 1;
+  }
+}
+
+.subscription__title {
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110.156%;
+  margin: 0;
+  padding-top: 68px;
+  padding-bottom: 22px;
+
+  @include vp-767 {
+  font-size: 22px;
+  }
+}
+
+.subscription__text {
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding-bottom: 59px;
+
+  @include vp-767 {
+  padding-bottom: 50px;
+  }
+}
+
+.container__price-wrapper {
+  position: relative;
+  margin-bottom: 69px;
+}
+
+.container__price-shadow {
+  color: #E8E8E8;
+  font-family: "Roboto Condensed";
+  font-size: 100px;
+  font-weight: 700;
+
+  @include vp-767 {
+    font-size: 80px;
+  }
+}
+
+.subscription__price-number {
+  margin-right: 14px;
+}
+
+.subscription__price {
+  position: absolute;
+  color: #103AAE;
+  font-family: "Roboto Condensed";
+  font-size: 60px;
+  font-weight: 700;
+  left: 19px;
+  top: 29px;
+
+
+  @include vp-767 {
+  font-size: 48px;
+  padding-bottom: 50px;
+  }
+}
+
+.btn__subscription {
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 27px 44px;
+  background-color: $color-default-white;
+  border: 2px solid #102654;
+
+  &:hover,
+  &:focus {
+  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  color: $color-default-white;
+  border: none;
+  }
+
+  &:active {
+  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.subscription__pancakes-desktop {
+  position: absolute;
+  top: 534px;
+  right: 3px;
+  z-index: 1;
+
+  @include vp-1200 {
+  display: none;
+  }
+}
+
+.subscription__pancakes-tablet {
+  display: none;
+
+  @include vp-1200 {
+    display: block;
+    position: absolute;
+    right: 2px;
+    bottom: -127px;
+  }
+
+  @include vp-767 {
+  display: none;
+  }
+}
