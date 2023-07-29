@@ -1,4 +1,4 @@
-.container__header {
+.container-header {
   position: absolute;
   width: calc(100% - $header-container-side-padding * 2 );
   display: flex;
@@ -18,7 +18,7 @@
   }
 }
 
-.header-title{
+.container-title{
   font-family: "Alumni Sans";
   font-size: 38px;
   font-weight: 600;
@@ -38,7 +38,7 @@
 }
 
 
-.phone-header {
+.container-phone {
   color: $color-default-white;
   font-family: "Alumni Sans";
   font-size: 26px;
@@ -57,16 +57,21 @@
   }
 }
 
-.container__content {
+.container-content {
   display: flex;
 }
 
-.container__description {
-  position: relative;
+.container-content__description {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: end;
   padding-top: 288px;
-  padding-left: 90px;
+  padding-left: 19px;
 
   @include vp-1200 {
   padding-top: 217px;
@@ -74,12 +79,12 @@
   }
 
   @include vp-767 {
-    position: absolute;
     padding-top: 200px;
+
   }
 }
 
-.link-header {
+.container-content__description-link {
   color: $color-default-white;
   font-family: "Roboto Condensed";
   font-size: 14px;
@@ -88,34 +93,28 @@
   text-align: end;
 }
 
-.container__specification {
-  font-family: "Roboto Condensed";
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  text-align: end;
-  padding: 288px 0 0 90px;
-}
-
-.container__location {
+.container-content__location {
   display: flex;
   flex-direction: column;
   padding-top: 114px;
   padding-right: 64px;
   align-items: end;
+  padding-left: 98px;
 
   @include vp-1200 {
     padding-top: 98px;
     padding-right: 30px;
+    padding-left: 89px;
   }
 
   @include vp-767 {
     padding-top: 92px;
     padding-right: 0;
+    padding-left: 92px;
   }
 }
 
-.text__header {
+.container-content__location-header {
   font-family: "Alumni Sans";
   font-size: 41px;
   font-weight: 600;
@@ -138,7 +137,7 @@
   }
 }
 
-.title__header {
+.container-content__location-title {
   font-family: "Alumni Sans";
   font-size: 100px;
   font-weight: 600;
@@ -168,7 +167,7 @@
   }
 }
 
-.btn__header {
+.container-content__location-btn {
   font-family: "Roboto Condensed";
   font-size: 12px;
   font-style: normal;
@@ -194,8 +193,8 @@
 
   &:hover,
   &:focus {
-   background-color: $color-default-white;
-   color: $color-neon-blue;
+    background-color: $color-default-white;
+    color: $color-neon-blue;
   }
 
 
@@ -206,7 +205,7 @@
 }
 
 
-.container__img {
+.container-img {
   padding: 21px 0;
 
   @include vp-1200 {

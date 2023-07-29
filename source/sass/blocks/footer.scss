@@ -1,8 +1,7 @@
 .footer {
   background-color: #030A1a;
   color: $color-default-white;
-  display: grid;
-  grid-template-columns: auto 1rf auto;
+  display: flex;
   justify-content: space-between;
   padding: 41px 104px 42px 103px;
   align-items: center;
@@ -12,37 +11,43 @@
   }
 
   @include vp-767 {
+    display: grid;
+    justify-content: center;
     padding: 50px 0 52px 15px;
   }
 }
 
-.footer__menu {
+.footer-menu {
   display: flex;
   justify-content: center;
 }
 
-.footer__header-title {
+.footer-menu__header {
   font-family: "Alumni Sans";
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.52px;
   text-transform: uppercase;
   margin: 0;
+  padding-right: 200px;
 
   @include vp-1200 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.48px;
+    padding-right: 62px;
+
   }
 
   @include vp-767 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
+    padding-right: 0;
   }
 }
 
-.footer__list {
+.footer-menu__list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -53,9 +58,16 @@
   @include vp-1200 {
     column-gap: 30px;
   }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 70px;
+  }
 }
 
-.footer__item-link {
+.footer-menu__link {
   color: $color-default-white;
   font-family: "Roboto Condensed";
   font-size: 14px;
@@ -66,15 +78,19 @@
   }
 }
 
-.footer__social-list {
+.footer-social__list {
   list-style-type: none;
   display: flex;
   position: relative;
   padding: 0;
   margin: 0;
+
+  @include vp-767 {
+    padding-top: 40px;
+  }
 }
 
-.footer__social-item {
+.footer-social__item {
   position: relative;
   width: 25px;
   height: 25px;
@@ -96,7 +112,7 @@
   }
 }
 
-.footer__social-svg {
+.footer-social__svg {
   position: absolute;
   top: 5px;
   left: 5px;

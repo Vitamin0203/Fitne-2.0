@@ -7,12 +7,14 @@
 
 // Global
 // ---------------------------------
+@import "vendor/accordion";
 @import "variables";
 @import "mixins";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/swiper-btn";
 
 // Blocks
 // ---------------------------------
@@ -24,19 +26,19 @@
 @import "blocks/custom-select";
 @import "blocks/header";
 @import "blocks/video";
-@import "blocks/main-conteiner";
-@import "blocks/container-gym";
-@import "blocks/subscription-container";
+@import "blocks/gym";
+@import "blocks/subscription";
 @import "blocks/super-games";
-@import "blocks/container-trainer";
-@import "blocks/container-advantages";
-@import "blocks/stock-container";
-@import "blocks/feedback-container";
-@import "blocks/contacts-container";
-@import "blocks/container-footer";
-@import "blocks/faq-container";
-@import "blocks/container-reviews";
+@import "blocks/trainer";
+@import "blocks/advantages";
+@import "blocks/stock";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/faq";
+@import "blocks/reviews";
 
+// Accordion
 
 
 // ---------------------------------

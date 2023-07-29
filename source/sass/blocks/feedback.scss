@@ -7,7 +7,7 @@
   }
 }
 
-.feedback__form{
+.feedback-form{
   background-color: #102654;
   padding: 56px 170px 70px 103px;
 
@@ -20,19 +20,21 @@
   }
 }
 
-.feedback__form-header {
+.feedback-form__header {
   color: $color-default-white;
   font-family: "Alumni Sans";
-  font-size: 54px;
+  font-size: 50px;
   font-weight: 800;
   line-height: 156%;
   letter-spacing: 1.62px;
   margin: 0;
+  padding-bottom: 24px;
 
   @include vp-1200 {
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.26px;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
@@ -42,7 +44,7 @@
   }
 }
 
-.feedback__form-container {
+.feedback-form__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
@@ -57,7 +59,7 @@
   }
 }
 
-.feedback__form-group {
+.feedback-form__container-group {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -68,9 +70,10 @@
   }
 }
 
-.feedback__form-input {
+.feedback-form__container-group__input {
   width: 100%;
   padding-bottom: 10px;
+  padding-top: 10px;
   border: none;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
@@ -88,11 +91,19 @@
   &:focus {
     border: 1px solid $color-default-white;
     padding-top: 10px;
-    color: transparent;
+    padding-left: 10px;
   }
 }
 
-.feedback__form-label {
+.feedback-form__container-group__input::placeholder {
+  color: $color-default-white;
+}
+
+.feedback-form__container-group__input:focus::placeholder {
+  opacity: 0;
+}
+
+.feedback-form__container-group__label {
   position: absolute;
   top: 0;
   color: $color-default-white;
@@ -101,7 +112,7 @@
   font-weight: 400;
 }
 
-.feedback__form-btn {
+.feedback-form__btn {
   color: $color-default-white;
   font-family: "Roboto Condensed";
   font-size: 14px;

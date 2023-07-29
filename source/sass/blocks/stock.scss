@@ -10,7 +10,7 @@
   }
 }
 
-.stock__title {
+.stock-title {
   color: #102654;
   font-family: "Alumni Sans";
   font-size: 54px;
@@ -33,7 +33,7 @@
   }
 }
 
-.stock__container {
+.stock-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
@@ -49,7 +49,7 @@
   }
 }
 
-.stock__container-deskription {
+.stock-container__deskription {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 
@@ -58,7 +58,7 @@
   }
 }
 
-.stock__container-depiction {
+.stock-container__deskription-depiction {
   background-color: #ed0233;
   color: $color-default-white;
   font-family: "Roboto Condensed";
@@ -71,7 +71,7 @@
   }
 }
 
-.stock__container-title {
+.stock-container__deskription-depiction__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 156%;
@@ -82,7 +82,7 @@
   }
 }
 
-.stock__container-price {
+.stock-container__deskription-depiction__price {
   font-size: 70px;
   font-weight: 700;
   line-height: 156%;
@@ -90,7 +90,7 @@
   padding-bottom: 35px;
 }
 
-.stock__container-text {
+.stock-container__deskription-depiction__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
@@ -102,7 +102,7 @@
   }
 }
 
-.stock__container-more {
+.stock-container__deskription-depiction__more {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -127,14 +127,14 @@
   }
 }
 
-.stock__container-foto {
+.stock-container__deskription-foto {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
 }
 
-.stock__container-addition {
+.stock-container__addition {
   color: #1C3374;
   font-family: "Roboto Condensed";
   text-align: start;
@@ -156,7 +156,7 @@
 }
 
 
-.stock__container-offer {
+.stock-container__addition-offer {
   padding: 35px 0 35px 35px;
   border: 7px solid;
   border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
@@ -168,13 +168,13 @@
   }
 }
 
-.stock__container-subtitle {
+.stock-container__addition-offer__subtitle {
   font-size: 26px;
   font-weight: 700;
   margin: 0;
 }
 
-.stock__container-paragraph {
+.stock-container__addition-offer__paragraph {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -191,7 +191,7 @@
   }
 }
 
-.stock__container-detail {
+.stock-detail {
   color:#1C3374;
   padding-bottom: 5px;
   border-bottom: 2px solid #1C3374;
