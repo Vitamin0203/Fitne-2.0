@@ -2,9 +2,8 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
   color: $color-default-white;
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
   padding: 30px 103px 51px;
 
   @include vp-1200 {

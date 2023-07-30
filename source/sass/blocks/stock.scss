@@ -12,7 +12,7 @@
 
 .stock-title {
   color: #102654;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
   letter-spacing: 1.62px;
@@ -51,17 +51,17 @@
 
 .stock-container__deskription {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   @include vp-767 {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .stock-container__deskription-depiction {
   background-color: #ed0233;
   color: $color-default-white;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   text-align: start;
   padding: 45px;
 
@@ -111,7 +111,6 @@
   padding-bottom: 5px;
   border-bottom: 2px solid $color-default-white;
 
-
   &:hover {
     opacity: 0.8;
   }
@@ -135,14 +134,12 @@
 }
 
 .stock-container__addition {
-  color: #1C3374;
-  font-family: "Roboto Condensed";
+  color: #1c3374;
+  font-family: "Roboto Condensed", sans-serif;
   text-align: start;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px;
-
-
 
   @include vp-1200 {
     grid-template-columns: repeat(2, 1fr);
@@ -159,7 +156,7 @@
 .stock-container__addition-offer {
   padding: 35px 0 35px 35px;
   border: 7px solid;
-  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 
 
@@ -192,17 +189,17 @@
 }
 
 .stock-detail {
-  color:#1C3374;
+  color: #1c3374;
   padding-bottom: 5px;
-  border-bottom: 2px solid #1C3374;
+  border-bottom: 2px solid #1c3374;
 
   &:focus {
     padding: 10px;
-    border: 1px solid #1C3374;
+    border: 1px solid #1c3374;
   }
 
   &:active {
-    color: #1C3374;
-    border-bottom: 2px solid #1C3374;
+    color: #1c3374;
+    border-bottom: 2px solid #1c3374;
   }
 }

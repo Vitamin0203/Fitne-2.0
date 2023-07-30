@@ -105,7 +105,8 @@ tabsTriggersitems.forEach((item) =>
 
 );
 
-document.querySelector('.faq-wrapper__tabs-triggers__item').click();
+// eslint-disable-next-line no-unused-expressions
+document.querySelectorAll('.faq-wrapper__tabs-triggers__item')[2].click();
 
 // скрипт на аккордион
 // eslint-disable-next-line no-new, no-undef
@@ -122,8 +123,8 @@ new Accordion('#tab-4');
 let mySwiper = new Swiper('#reviews-slider', {
   direction: 'horizontal',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-slider-arrow--next',
+    prevEl: '.reviews-slider-arrow--prev',
   },
 });
 

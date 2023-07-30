@@ -2,7 +2,7 @@
   padding: 120px 103px 120px 103px;
   background-color: #f8f9fc;
   color: #102654;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
 
   @include vp-1200 {
     padding: 100px 45px;
@@ -15,7 +15,7 @@
 
 .faq-header {
   color: #102654;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
   letter-spacing: 1.62px;
@@ -39,7 +39,7 @@
 .faq-wrapper__tabs {
   display: flex;
 
-  @include vp-1200   {
+  @include vp-1200 {
     flex-direction: column;
   }
 }
@@ -49,7 +49,7 @@
   flex-direction: column;
   padding-right: 40px;
 
-  @include vp-1200   {
+  @include vp-1200 {
     flex-direction: row;
     justify-content: space-between;
     padding-right: 0;
@@ -77,9 +77,9 @@
   margin-bottom: 10px;
   background-color: transparent;
   color: #102654;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
 
-  @include vp-1200   {
+  @include vp-1200 {
     width: 162px;
     flex-direction: row;
     margin-bottom: 0;
@@ -99,21 +99,21 @@
 
   &:active {
     color: $color-default-white;
-    background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   }
 }
 
 .faq-wrapper__tabs-triggers__item--activ {
   color: $color-default-white;
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 
 .faq .faq-wrapper__tabs-content__list {
-  border-top: 1px solid rgba(28, 51, 116, 0.20);;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
 .faq .faq-wrapper__tabs-content__list:last-child {
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
 .faq-wrapper__tabs-content__item {
@@ -144,8 +144,8 @@
   }
 
   @include vp-767 {
-  font-size: 18px;
-  line-height: 120%;
+    font-size: 18px;
+    line-height: 120%;
   }
 }
 
@@ -162,7 +162,7 @@
 
 .faq-wrapper__tabs-content__icon:hover path,
 .faq-wrapper__tabs-content__icon:focus path {
-  stroke: white;
+  stroke: $color-default-white;
 }
 
 .icon-close {
@@ -189,7 +189,7 @@
   }
 }
 
-.ac .ac-trigger:after {
+.ac .ac-trigger::after {
   content: none;
 }
 
