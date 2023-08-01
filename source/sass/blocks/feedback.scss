@@ -20,7 +20,7 @@
   }
 }
 
-.feedback-form__header {
+.feedback-form h3 {
   color: $color-default-white;
   font-family: "Alumni Sans", sans-serif;
   font-size: 50px;
@@ -59,7 +59,7 @@
   }
 }
 
-.feedback-form__container-group {
+.feedback-form__group {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -70,7 +70,7 @@
   }
 }
 
-.feedback-form__container-group__input {
+.feedback-form__input {
   width: 100%;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -95,15 +95,15 @@
   }
 }
 
-.feedback-form__container-group__input::placeholder {
+.feedback-form__input::placeholder {
   color: $color-default-white;
 }
 
-.feedback-form__container-group__input:focus::placeholder {
+.feedback-form__input:focus::placeholder {
   opacity: 0;
 }
 
-.feedback-form__container-group__label {
+.feedback-form__label {
   position: absolute;
   top: 0;
   color: $color-default-white;

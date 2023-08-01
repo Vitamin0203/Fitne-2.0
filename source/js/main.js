@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 function findVideos() {
-  let videos = document.querySelectorAll('.gym-container__video');
+  let videos = document.querySelectorAll('.video');
 
   for (let i = 0; i < videos.length; i++) {
     setupVideo(videos[i]);
@@ -37,8 +37,8 @@ function findVideos() {
 }
 
 function setupVideo(video) {
-  let link = video.querySelector('.gym-container__video-link');
-  let button = video.querySelector('.gym-container__video-button');
+  let link = video.querySelector('.video-link');
+  let button = video.querySelector('.video__button');
   let id = parseMediaURL(link);
 
   video.addEventListener('click', () => {
@@ -50,7 +50,7 @@ function setupVideo(video) {
   });
 
   link.removeAttribute('href');
-  video.classList.add('gym-container__video--enabled');
+  video.classList.add('video--enabled');
 }
 
 function parseMediaURL(media) {
@@ -67,7 +67,7 @@ function createIframe(id) {
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', generateURL(id));
-  iframe.classList.add('gym-container__video-media');
+  iframe.classList.add('video__media');
 
   return iframe;
 }
@@ -82,31 +82,31 @@ findVideos();
 
 
 // выбор первого таба
-document.querySelector('.months-list__item').click();
+document.querySelector('.subscription-list__item').click();
 
 // скрипт для табов
-const tabsTriggersitems = document.querySelectorAll('.faq-wrapper__tabs-triggers__item');
+const tabsTriggersitems = document.querySelectorAll('.faq__item');
 tabsTriggersitems.forEach((item) =>
   item.addEventListener('click', function (e) {
     e.preventDefault();
 
     const id = e.target.getAttribute('href').replace('#', '');
 
-    document.querySelectorAll('.faq-wrapper__tabs-triggers__item').forEach(
-        (child) => child.classList.remove('faq-wrapper__tabs-triggers__item--activ')
+    document.querySelectorAll('.faq__item').forEach(
+        (child) => child.classList.remove('faq__item--activ')
     );
-    document.querySelectorAll('.faq-wrapper__tabs-content__item').forEach(
-        (child) => child.classList.remove('faq-wrapper__tabs-content__item--activ')
+    document.querySelectorAll('.faq-wrapper__item').forEach(
+        (child) => child.classList.remove('faq-wrapper__item--activ')
     );
 
-    item.classList.add('faq-wrapper__tabs-triggers__item--activ');
-    document.getElementById(id).classList.add('faq-wrapper__tabs-content__item--activ');
+    item.classList.add('faq__item--activ');
+    document.getElementById(id).classList.add('faq-wrapper__item--activ');
   })
 
 );
 
 // eslint-disable-next-line no-unused-expressions
-document.querySelectorAll('.faq-wrapper__tabs-triggers__item')[2].click();
+document.querySelectorAll('.faq__item')[2].click();
 
 // скрипт на аккордион
 // eslint-disable-next-line no-new, no-undef
@@ -123,24 +123,24 @@ new Accordion('#tab-4');
 let mySwiper = new Swiper('#reviews-slider', {
   direction: 'horizontal',
   navigation: {
-    nextEl: '.reviews-slider-arrow--next',
-    prevEl: '.reviews-slider-arrow--prev',
+    nextEl: '.reviews-box__arrow--next',
+    prevEl: '.reviews-box__arrow--prev',
   },
 });
 
 mySwiper.on('slideChange', function () {
   // Заблокировать кнопку "назад" при первом слайде
   if (mySwiper.activeIndex === 0) {
-    mySwiper.navigation.$prevEl.addClass('swiper-button-disabled');
+    mySwiper.navigation.$prevEl.addClass('reviews-box__arrow--prev-disabled');
   } else {
-    mySwiper.navigation.$prevEl.removeClass('swiper-button-disabled');
+    mySwiper.navigation.$prevEl.removeClass('reviews-box__arrow--prev-disabled');
   }
 
   // Заблокировать кнопку "вперед" при последнем слайде
   if (mySwiper.activeIndex === mySwiper.slides.length - 1) {
-    mySwiper.navigation.$nextEl.addClass('swiper-button-disabled');
+    mySwiper.navigation.$nextEl.addClass('reviews-box__arrow--next-disabled');
   } else {
-    mySwiper.navigation.$nextEl.removeClass('swiper-button-disabled');
+    mySwiper.navigation.$nextEl.removeClass('reviews-box__arrow--next-disabled');
   }
 });
 

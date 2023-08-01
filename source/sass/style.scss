@@ -4,10 +4,11 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
+@import "vendor/accordion";
 
 // Global
 // ---------------------------------
-@import "vendor/accordion";
+@import "global/wrapper";
 @import "variables";
 @import "mixins";
 @import "global/fonts";

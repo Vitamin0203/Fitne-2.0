@@ -13,7 +13,7 @@
   }
 }
 
-.faq-header {
+.faq-title h3 {
   color: #102654;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
@@ -44,7 +44,7 @@
   }
 }
 
-.faq-wrapper__tabs-triggers {
+.faq-wrapper__triggers {
   display: flex;
   flex-direction: column;
   padding-right: 40px;
@@ -64,7 +64,7 @@
 }
 
 
-.faq-wrapper__tabs-triggers__item {
+.faq__item {
   width: 260px;
   font-size: 18px;
   font-style: normal;
@@ -103,31 +103,31 @@
   }
 }
 
-.faq-wrapper__tabs-triggers__item--activ {
+.faq__item--activ {
   color: $color-default-white;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 
-.faq .faq-wrapper__tabs-content__list {
+.faq .faq-wrapper__list {
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.faq .faq-wrapper__tabs-content__list:last-child {
+.faq .faq-wrapper__list:last-child {
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.faq-wrapper__tabs-content__item {
+.faq-wrapper__item {
   display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.faq-wrapper__tabs-content__item--activ {
+.faq-wrapper__item--activ {
   display: block;
 }
 
-.faq-wrapper__tabs-content__item .faq-wrapper__tabs-content__title {
+.faq-wrapper__item .faq-wrapper__title {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -149,19 +149,19 @@
   }
 }
 
-.faq-wrapper__tabs-content__icon {
+.faq-wrapper__icon {
   margin-left: 20px;
   display: block;
   flex-shrink: 0;
 }
 
-.faq-wrapper__tabs-content__icon:hover circle,
-.faq-wrapper__tabs-content__icon:focus circle {
+.faq-wrapper__icon:hover circle,
+.faq-wrapper__icon:focus circle {
   fill: #102654;
 }
 
-.faq-wrapper__tabs-content__icon:hover path,
-.faq-wrapper__tabs-content__icon:focus path {
+.faq-wrapper__icon:hover path,
+.faq-wrapper__icon:focus path {
   stroke: $color-default-white;
 }
 
@@ -169,7 +169,7 @@
   display: none;
 }
 
-.faq-wrapper__tabs-content__item .faq-wrapper__tabs-content__text {
+.faq-wrapper__item .faq-wrapper__text {
   font-size: 18px;
   font-weight: 300;
   line-height: 140%;
@@ -181,7 +181,7 @@
   }
 }
 
-.is-active .faq-wrapper__tabs-content__text {
+.is-active .faq-wrapper__text {
   padding-bottom: 25px;
 
   @include vp-767 {

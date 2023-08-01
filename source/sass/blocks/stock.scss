@@ -10,7 +10,7 @@
   }
 }
 
-.stock-title {
+.stock-header h3 {
   color: #102654;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
@@ -49,7 +49,7 @@
   }
 }
 
-.stock-container__deskription {
+.stock__deskription {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -58,7 +58,7 @@
   }
 }
 
-.stock-container__deskription-depiction {
+.stock__depiction {
   background-color: #ed0233;
   color: $color-default-white;
   font-family: "Roboto Condensed", sans-serif;
@@ -71,7 +71,7 @@
   }
 }
 
-.stock-container__deskription-depiction__title {
+.stock__depiction-header {
   font-size: 28px;
   font-weight: 700;
   line-height: 156%;
@@ -82,7 +82,7 @@
   }
 }
 
-.stock-container__deskription-depiction__price {
+.stock__depiction-price {
   font-size: 70px;
   font-weight: 700;
   line-height: 156%;
@@ -90,7 +90,7 @@
   padding-bottom: 35px;
 }
 
-.stock-container__deskription-depiction__text {
+.stock__depiction-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
@@ -102,7 +102,7 @@
   }
 }
 
-.stock-container__deskription-depiction__more {
+.stock__depiction-more {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -126,14 +126,14 @@
   }
 }
 
-.stock-container__deskription-foto {
+.stock__deskription-foto {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
 }
 
-.stock-container__addition {
+.stock__addition {
   color: #1c3374;
   font-family: "Roboto Condensed", sans-serif;
   text-align: start;
@@ -153,8 +153,8 @@
 }
 
 
-.stock-container__addition-offer {
-  padding: 35px 0 35px 35px;
+.stock__addition-offer {
+  padding: 35px 0 30px 35px;
   border: 7px solid;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
@@ -165,13 +165,13 @@
   }
 }
 
-.stock-container__addition-offer__subtitle {
+.stock__addition-header {
   font-size: 26px;
   font-weight: 700;
   margin: 0;
 }
 
-.stock-container__addition-offer__paragraph {
+.stock__addition-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -188,7 +188,7 @@
   }
 }
 
-.stock-detail {
+.stock__addition-more {
   color: #1c3374;
   padding-bottom: 5px;
   border-bottom: 2px solid #1c3374;
