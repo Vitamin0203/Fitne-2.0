@@ -11,7 +11,7 @@
   }
 }
 
-.advantages-container h3 {
+.advantages h3 {
   color: #102654;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
@@ -45,6 +45,7 @@
 .advantages-wrapper__container {
   @include vp-1200 {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 50px;
 
     &:nth-child(n+2) {
@@ -52,7 +53,7 @@
     }
 
     &:last-of-type,
-    &:nth-last-child(-2) {
+    &:nth-last-child(n-2) {
       padding-top: 50px;
     }
   }
@@ -65,29 +66,23 @@
 .advantages-wrapper__box {
   display: flex;
   padding-bottom: 84px;
+  padding-top: 82px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
-  &:nth-child(n+2) {
-    padding-bottom: 0;
-    border-bottom: none;
+  &:first-child {
+    padding-top: 0;
   }
 
-  &:last-of-type,
-  &:nth-last-child(-2) {
-    padding-top: 83px;
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: unset;
   }
 
   @include vp-1200 {
     padding-bottom: 0;
     border-bottom: none;
-    padding-right: 60px;
 
-    &:nth-child(n+2) {
-      padding-right: 0;
-    }
-
-    &:last-of-type,
-    &:nth-last-child(-2) {
+    &:last-child {
       padding-top: 0;
     }
   }
@@ -97,10 +92,6 @@
     padding-right: 0;
     padding-bottom: 50px;
     text-align: center;
-
-    &:nth-child(n+2) {
-      padding-bottom: 0;
-    }
   }
 }
 

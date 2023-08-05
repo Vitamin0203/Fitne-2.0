@@ -13,7 +13,12 @@
   }
 }
 
-.faq-title h3 {
+.faq div {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.faq h3 {
   color: #102654;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
@@ -50,14 +55,18 @@
   padding-right: 40px;
 
   @include vp-1200 {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     padding-right: 0;
     padding-bottom: 40px;
   }
 
   @include vp-767 {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 8px;
     padding-bottom: 30px;
   }

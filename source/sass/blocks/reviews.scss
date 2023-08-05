@@ -15,7 +15,7 @@
   }
 }
 
-.reviews-title h3 {
+.reviews h3 {
   color: #102654;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
@@ -143,10 +143,15 @@
   &:active {
     background-color: #102654;
     border-radius: 50%;
+
+    .reviews-box__svg {
+      stroke: $color-default-white;
+    }
   }
 }
 
 .reviews-box__arrow--next {
+  stroke: #102654;
   left: auto;
   right: -90px;
 
@@ -156,6 +161,7 @@
 }
 
 .reviews-box__arrow--prev {
+  stroke: #102654;
   right: auto;
   left: -90px;
 

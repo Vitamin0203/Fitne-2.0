@@ -82,7 +82,7 @@ findVideos();
 
 
 // выбор первого таба
-document.querySelector('.subscription-list__item').click();
+document.querySelector('.subscription__link').click();
 
 // скрипт для табов
 const tabsTriggersitems = document.querySelectorAll('.faq__item');
@@ -149,7 +149,7 @@ const initTrainersSlider = () => {
   new Swiper('#trainers-slaider', {
 
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 60,
 
     breakpoints: {
       // when window width is >= 320px
@@ -165,7 +165,7 @@ const initTrainersSlider = () => {
       // when window width is >= 640px
       1200: {
         slidesPerView: 4,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     },
 

@@ -1,43 +1,57 @@
+.trainer__svg {
+  position: relative;
+  top: 0;
+  left: 3px;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+    top: 0;
+    left: 2px;
+  }
+}
+
 .swiper-button-next {
+  stroke: #102654;
   left: auto;
   right: 0;
 }
 
 .swiper-button-prev {
+  stroke: #102654;
   left: 0;
   right: auto;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
+  position: absolute;
+  width: 56px;
+  height: 56px;
   top: calc(50% - 10px);
 
-  &::after {
-    color: #102654;
-    --swiper-navigation-size: 32px;
+  @include vp-767 {
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    border: 1px solid #102654;
+  }
+
+  &:active {
+    background-color: #102654;
+    border-radius: 50%;
+
+    .trainer__svg {
+      stroke: $color-default-white;
+    }
   }
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover,
-.swiper-button-next:focus,
-.swiper-button-prev:focus {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: $color-default-white;
-  border: 1px solid #102654;
-}
-
-.swiper-button-next:active,
-.swiper-button-prev:active {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: #102654;
-  border: 1px solid #102654;
-
-  &::after {
-    color: $color-default-white;
-  }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
