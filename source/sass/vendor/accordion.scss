@@ -1,85 +1,35 @@
-@charset "UTF-8";
+.accordion {
+  //max-width: 500px;
+  margin: 0 auto 50px auto;
 
-$color-white: #ffffff;
-$color-light-grey: #eeeeee;
-$color-grey: #8a8a8a;
-$color-black: #111111;
-
-.ac {
-  margin-top: 8px;
-  border: 1px solid $color-light-grey;
-  background-color: $color-white;
-  box-sizing: border-box;
-
-  // Header class
-  .ac-header {
-    margin: 0;
-    padding: 0;
+  & & {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  // Trigger class
-  .ac-trigger {
-    font: 16px "Arial", sans-serif;
-    font-weight: 700;
-    color: $color-black;
-    text-align: left;
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    margin-bottom: 34px;
+    padding: 10px;
+  }
+
+  &__element.is-active > &__button {
+    opacity: 0.5;
+  }
+
+  &__button {
     width: 100%;
-    padding: 8px 32px 8px 8px;
-    display: block;
+    padding: 10px;
+
+    text-transform: uppercase;
+
     cursor: pointer;
-    background-color: transparent;
-    transition: color 0.25s ease;
-    position: relative;
-    text-decoration: none;
-    margin: 0;
-    border: 0;
-
-    &::after {
-      content: "+";
-      text-align: center;
-      width: 15px;
-      transform: translate(0, -50%);
-      position: absolute;
-      right: 10px;
-      top: 50%;
-    }
-
-    &:focus {
-      color: $color-grey;
-    }
   }
 
-  // Panel class
-  .ac-panel {
-    overflow: hidden;
-    transition-property: height, visibility;
-    transition-timing-function: ease;
-
-    .ac-text {
-      font: 15px/24px "Arial", sans-serif;
-      color: $color-black;
-      padding: 8px;
-      margin: 0;
-    }
-  }
-
-  // Hide content when Javascript is enabled
-  &.js-enabled {
-    .ac-panel {
-      visibility: hidden;
-    }
-  }
-
-  // Active class
-  &.is-active {
-    .ac-panel {
-      visibility: visible;
-    }
-
-    & > .ac-header .ac-trigger {
-      &::after {
-        content: "\2013";
-      }
-    }
+  &__wrapper {
+    padding: 10px;
   }
 }
