@@ -4,7 +4,7 @@
   padding: 65px 103px 120px 103px;
   background-color: #f8f9fc;
   color: #102654;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 
   @include vp-1200 {
     padding: 48px 45px;
@@ -17,7 +17,7 @@
 
 .faq h3 {
   color: #102654;
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
   letter-spacing: 1.62px;
@@ -102,15 +102,11 @@
     border: 1px solid #102654;
   }
 
-  &:active {
+  &:active,
+  &.is-active {
     color: $color-default-white;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   }
-}
-
-.faq__item--activ {
-  color: $color-default-white;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 
 .faq-wrapper__content {
@@ -122,6 +118,10 @@
   margin-top: 0;
   background-color: #f8f9fc;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
+}
+
+.is-active.faq-wrapper__list {
+  padding-bottom: 25px;
 }
 
 .faq-wrapper__list:last-child {
@@ -137,7 +137,7 @@
 
 .faq-wrapper__list h4 {
   color: #102654;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -147,12 +147,11 @@
   letter-spacing: 0.4px;
   font-weight: 500;
   line-height: 120%;
-  padding-top: 32px;
+  padding-top: 18px;
   padding-bottom: 31px;
 
   @include vp-1200 {
     line-height: 100%;
-    padding-bottom: 7px;
   }
 
   @include vp-767 {

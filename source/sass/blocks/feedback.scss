@@ -24,7 +24,7 @@
 
 .feedback-form h3 {
   color: $color-default-white;
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 56px;
   font-weight: 800;
   line-height: 140%;
@@ -63,7 +63,6 @@
 }
 
 .feedback-form__group {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
@@ -86,7 +85,7 @@
   border-bottom: 1px solid #74819c;
   background-color: transparent;
   outline: none;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: $color-default-white;
@@ -114,7 +113,7 @@
 
 .feedback-form__btn {
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.9px;
@@ -130,13 +129,14 @@
 .is-invalid {
   .feedback-form__error {
     display: block;
-    font-family: "Roboto Condensed","Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     padding-top: 2px;
   }
 }
+
 .feedback-form__error {
   color: #ff121f;
   display: none;

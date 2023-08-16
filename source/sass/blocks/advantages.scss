@@ -19,7 +19,7 @@
   letter-spacing: 1.62px;
   text-align: center;
   margin: 0;
-  padding-bottom: 55px;
+  padding-bottom: 46px;
 
   @include vp-1200 {
     font-size: 42px;
@@ -31,7 +31,7 @@
   @include vp-767 {
     font-size: 31px;
     letter-spacing: 0.96px;
-    padding-bottom: 48px;
+    padding-bottom: 44px;
     padding-left: 15px;
   }
 }
@@ -45,16 +45,15 @@
 }
 
 .advantages-wrapper__container {
-  padding-right: 78px;
-
-  &:last-child {
-    padding-right: 0;
-    padding-left: 39px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 83px;
 
   @include vp-1200 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 43px;
+    grid-column-gap: 40px;
     padding: 0;
 
     &:nth-child(n+2) {
@@ -63,26 +62,21 @@
   }
 
   @include vp-767 {
+    display: flex;
     flex-direction: column;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
   }
 }
 
 .advantages-wrapper__box {
   display: flex;
   padding-bottom: 63px;
-  padding-top: 57px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    padding-bottom: 0;
-    border-bottom: unset;
-  }
-
   @include vp-1200 {
+    grid-column: 1/1;
+    grid-row: 1/1;
     padding-bottom: 0;
     border-bottom: none;
 
@@ -96,6 +90,47 @@
     padding-right: 0;
     padding-bottom: 21px;
     text-align: center;
+  }
+}
+
+.advantages-wrapper__box:nth-child(2) {
+  grid-column: 1 / 2;
+  padding-bottom: 0;
+  border-bottom: none;
+
+  @include vp-1200 {
+    grid-row: 3/3;
+  }
+
+  @include vp-767 {
+    order: 3;
+    padding-top: 32px;
+  }
+}
+
+.advantages-wrapper__box:nth-child(4) {
+  grid-row: 1 / 1;
+  grid-column: 3 / 3;
+
+  @include vp-1200 {
+    grid-column: 2 / 2;
+  }
+}
+
+.advantages-wrapper__box:nth-child(5) {
+  grid-column: 3/4;
+  grid-row: 2/2;
+  padding-bottom: 0;
+  border-bottom: none;
+
+  @include vp-1200 {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+  }
+
+  @include vp-767 {
+    order: 3;
+    padding-top: 23px;
   }
 }
 
@@ -113,7 +148,7 @@
 }
 
 .advantages-wrapper__quantity h4 {
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 76px;
   font-weight: 700;
   line-height: 135%;
@@ -124,6 +159,7 @@
   margin: 0;
   padding-left: 21px;
 
+
   @include vp-1200 {
     font-size: 58px;
     padding-left: 4px;
@@ -133,7 +169,7 @@
 
 .advantages-wrapper__quantity p {
   color: #2e35ac;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -156,7 +192,7 @@
 
 .advantages-wrapper__description h5 {
   color: #102654;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 150%;
@@ -177,10 +213,11 @@
 
 .advantages-wrapper__description p {
   color: #102654;
-  font-family: "Roboto Condensed","Arial", sans-serif;
-  font-size: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 180%;
+  line-height: 140%;
+  letter-spacing: -0.2px;
   margin: 0;
 
   @include vp-767 {
@@ -191,48 +228,44 @@
   }
 }
 
-.advantages-wrapper__block {
+.advantages-wrapper__objects {
+  grid-row: 1/3;
   background-color: #1c3374;
-  margin-top: 24px;
-  margin-bottom: 27px;
+  text-align: center;
+  margin: 26px 53px 40px;
+  grid-column-start: 2;
+  grid-column-end: 2;
 
   @include vp-1200 {
-    margin-bottom: 13px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    text-align: center;
+    margin: 0;
     margin-left: 117px;
     margin-right: 108px;
   }
 
-  @include vp-767  {
+  @include vp-767 {
+    order: 2;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-.advantages-wrapper__objects {
-  text-align: center;
-
-  @include vp-1200 {
-  }
-
-  @include vp-767 {
-    padding: 0;
-  }
-}
-
 .advantages-wrapper__objects h6 {
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 87%;
   letter-spacing: 10px;
   margin: 0;
   padding-top: 60px;
-  padding-bottom: 4px;
 
   @include vp-1200 {
-    padding-top: 44px;
+    padding-top: 34px;
     padding-bottom: 0;
   }
 
@@ -246,16 +279,18 @@
 
 .advantages-wrapper__objects p {
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 150%;
   margin: 0;
-  padding-bottom: 31px;
+  padding-top: 6px;
+  padding-bottom: 32px;
 
   @include vp-1200 {
     font-size: 22px;
-    padding-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 14px;
   }
 
   @include vp-767 {
@@ -268,13 +303,15 @@
 .advantages-wrapper__objects span {
   display: inline-block;
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
-  font-size: 17px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
   font-weight: 400;
   line-height: 150%;
+  padding-right: 26px;
+  padding-left: 22px;
 
   @include vp-1200 {
-    padding-bottom: 45px;
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 24px;
     padding-left: 135px;

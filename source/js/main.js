@@ -15,9 +15,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+
+  // Табы и аккордеоны
   initTabs();
   initAccordions();
   setTimeout(() => accordions.updateAccordionsHeight(), 1000);
+
+  // вызов скрипта для видео
+
+  findVideos();
+
 
   // Modules
   // ---------------------------------
@@ -93,44 +100,6 @@ function initTrainersSlider() {
 }
 
 initTrainersSlider();
-
-// вызов скрипта для видео
-
-findVideos();
-
-/* // скрипт для табов
-const tabsTriggersitems = document.querySelectorAll('.faq__item');
-tabsTriggersitems.forEach((item) =>
-  item.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const id = e.target.getAttribute('href').replace('#', '');
-
-    document.querySelectorAll('.faq__item').forEach(
-        (child) => child.classList.remove('faq__item--activ')
-    );
-    document.querySelectorAll('.faq-wrapper__item').forEach(
-        (child) => child.classList.remove('faq-wrapper__item--activ')
-    );
-
-    item.classList.add('faq__item--activ');
-    document.getElementById(id).classList.add('faq-wrapper__item--activ');
-  })
-);
-
-// eslint-disable-next-line no-unused-expressions
-document.querySelectorAll('.faq__item')[2].click();
-
-// скрипт на аккордион
-// eslint-disable-next-line no-new, no-undef
-new Accordion('#tab-1');
-// eslint-disable-next-line no-new, no-undef
-new Accordion('#tab-2');
-// eslint-disable-next-line no-new, no-undef
-new Accordion('#tab-3');
-// eslint-disable-next-line no-new, no-undef
-new Accordion('#tab-4');
- */
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
 

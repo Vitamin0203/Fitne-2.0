@@ -1,5 +1,5 @@
 .trainer {
-  padding-bottom: 105px;
+  padding-bottom: 99px;
 
   @include vp-1200 {
     padding-bottom: 100px;
@@ -12,12 +12,12 @@
 
 .trainer h3 {
   color: #102654;
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
   letter-spacing: 1.62px;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 20px;
   padding-left: 105px;
   padding-bottom: 69px;
 
@@ -113,7 +113,7 @@
 }
 
 .trainer__description h4 {
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -123,7 +123,7 @@
 
 .trainer__description span {
   color: #b6bdcc;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
@@ -134,7 +134,7 @@
   padding-right: 45px;
   text-align: start;
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;

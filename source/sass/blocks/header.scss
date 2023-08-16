@@ -16,25 +16,26 @@
 .header div {
   max-width: 1160px;
 
-  @include vp-1200  {
+  @include vp-1200 {
     margin: 0 auto;
   }
 }
 
 .header__text {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 206px);
 
   @include vp-1200 {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 100%;
   }
 }
 
 .header__text h1 {
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 38px;
   font-weight: 600;
   margin: 0;
@@ -91,7 +92,7 @@
 .header__description {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -111,7 +112,7 @@
 
 .header__link {
   color: $color-default-white;
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -147,7 +148,7 @@
 }
 
 .header__subject {
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 41px;
   font-weight: 600;
   margin: 0;
@@ -171,7 +172,7 @@
 }
 
 .header__title {
-  font-family: "Alumni Sans","Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 100px;
   font-weight: 600;
   line-height: 113px;
@@ -203,7 +204,7 @@
 }
 
 .header__btn {
-  font-family: "Roboto Condensed","Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   justify-content: center;

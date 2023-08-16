@@ -50,7 +50,7 @@ img.video__media {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: #ffffff;
+  color: $color-default-white;
 
   @include vp-1200 {
     margin-top: 50px;
@@ -83,15 +83,14 @@ img.video__media {
     border-radius: 50px;
     border: 2px solid transparent;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
+    -webkit-mask: linear-gradient($color-default-white 0 0) padding-box,
+      linear-gradient($color-default-white 0 0);
+    mask-composite: destination-out;
     opacity: 0.2;
   }
 
   &:hover {
-    background: #ffffff;
+    background: $color-default-white;
     color: #102654;
 
     &::before {
@@ -114,7 +113,7 @@ img.video__media {
       height: 58px;
       transform: translate(-50%, -50%);
       border-radius: 100%;
-      background-color: #ffffff;
+      background-color: $color-default-white;
     }
   }
 }

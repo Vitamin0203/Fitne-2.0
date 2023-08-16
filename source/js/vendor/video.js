@@ -2,7 +2,7 @@ export function findVideos() {
   let videos = document.querySelectorAll('.video');
 
   for (let i = 0; i < videos.length; i++) {
-     setupVideo(videos[i]);
+    setupVideo(videos[i]);
   }
 }
 
@@ -47,4 +47,3 @@ function generateURL(id) {
 
   return 'https://www.youtube.com/embed/' + id + query;
 }
-
