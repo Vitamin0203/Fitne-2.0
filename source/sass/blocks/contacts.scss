@@ -1,14 +1,15 @@
 .contacts {
-  padding: 76px 0 61px 0;
+  padding: 76px 143px 0 105px;
   margin: 0 auto;
 
   @include vp-1200 {
     padding-top: 72px;
-    padding-bottom: 58px;
+    padding-left: 98px;
+    padding-bottom: 62px;
   }
 
   @include vp-767 {
-    padding: 70px 15px 61px 15px;
+    padding: 70px 15px 65px 15px;
     margin-left: 0;
   }
 }
@@ -33,9 +34,10 @@
 }
 
 .contacts-container {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 59px;
 
   @include vp-1200 {
     padding-top: 50px;
@@ -52,7 +54,7 @@
   border-right: 1px solid #74819c;
 
   @include vp-1200 {
-    padding-right: 48px;
+    padding-right: 52px;
   }
 
   @include vp-767 {
@@ -64,44 +66,31 @@
 
 .contacts-container h4 {
   color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
   margin: 0;
+  padding-bottom: 3px;
 
   @include vp-1200 {
+    padding-bottom: 0;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 150%;
-  }
-
-  @include vp-767 {
-    font-size: 24px;
-    letter-spacing: 0.5px;
-    line-height: 126%;
   }
 }
 
 .contacts-container p {
   color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 12.7px;
   font-weight: 400;
+  font-style: normal;
   line-height: 152.34%;
   margin: 0;
   padding-bottom: 21px;
 
   @include vp-1200 {
-    font-size: 18px;
-    padding-top: 4px;
-    padding-bottom: 21px;
-  }
-
-  @include vp-767 {
     font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 165.34%;
+    padding-top: 6px;
+    padding-bottom: 21px;
   }
 }
 
@@ -111,8 +100,7 @@
 
 .contacts-container__link {
   color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 152.34%;
   margin: 0;
@@ -120,15 +108,9 @@
   display: block;
 
   @include vp-1200 {
-    font-size: 18px;
-    padding-top: 1px;
-    padding-bottom: 22px;
-  }
-
-  @include vp-767 {
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 0.3px;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 24px;
   }
 }
 
@@ -136,28 +118,11 @@
   padding-bottom: 0;
 }
 
-.contacts-description {
-  color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 152.34%;
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 30px;
-
-  @include vp-1200 {
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 35px;
-  }
-}
-
 .contacts-container__contact {
   padding-left: 60px;
 
   @include vp-1200 {
-    padding-left: 48px;
+    padding-left: 46px;
   }
 
   @include vp-767 {

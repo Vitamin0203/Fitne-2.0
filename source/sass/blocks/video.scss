@@ -83,7 +83,7 @@ img.video__media {
     border-radius: 50px;
     border: 2px solid transparent;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) border-box;
-    -webkit-mask: linear-gradient($color-default-white 0 0) padding-box,
+    mask: linear-gradient($color-default-white 0 0) padding-box,
       linear-gradient($color-default-white 0 0);
     mask-composite: destination-out;
     opacity: 0.2;

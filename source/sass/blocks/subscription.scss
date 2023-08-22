@@ -2,18 +2,18 @@
   position: relative;
   background: #f8f9fc;
   overflow: visible;
-  padding: 142px 103px 116px;
+  padding: 119px 103px 121px;
 
   @include vp-1200 {
-    padding: 113px 163px;
+    padding: 99px 163px 99px 163px;
   }
 
   @include vp-767 {
-    padding: 69px 15px 58px;
+    padding: 64px 15px 58px;
   }
 }
 
-.subscription div {
+.subscription__centerer {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -24,28 +24,30 @@
   text-align: center;
   font-size: 54px;
   font-weight: 600;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: 1.62px;
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 16px;
 
   @include vp-1200 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 600;
-    letter-spacing: 2px;
-    padding-bottom: 32px;
+    letter-spacing: 1.26px;
+    padding-bottom: 21px;
     padding-right: 11px;
   }
 
   @include vp-767 {
     font-size: 32px;
-    font-weight: 600;
     letter-spacing: 0.96px;
-    padding-bottom: 27px;
-    padding-right: 3px;
+    padding-bottom: 23px;
+    padding-right: 0;
   }
 }
 
 .subscription__tabs {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
   color: #102654;
@@ -72,25 +74,26 @@
   }
 }
 
-.subscription__link {
+.subscription__tabs p {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  font-style: normal;
+  line-height: 30px;
   opacity: 0.5;
+  margin: 0;
   padding-bottom: 14px;
 
   @include vp-1200 {
     font-size: 16px;
+    line-height: 27px;
   }
 
   @include vp-767 {
-    font-size: 14px;
-    letter-spacing: 0.3px;
+    font-size: 15px;
+    line-height: 24px;
     padding-bottom: 12px;
   }
 
@@ -123,6 +126,7 @@
 
 
 .subscription__list {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
   z-index: 2;
   display: grid;
@@ -153,11 +157,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 68px;
+  padding-bottom: 59px;
   border: 7px solid $color-default-white;
 
   @include vp-1200 {
     width: 442px;
+    padding-bottom: 61px;
   }
 
   @include vp-767 {
@@ -176,96 +181,109 @@
 
 .subscription__item h4 {
   color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 31px;
+  font-size: 26.2px;
   font-weight: 700;
-  line-height: 110.16%;
+  line-height: 152.34%;
+  font-style: normal;
   margin: 0;
-  padding-top: 52px;
-  padding-bottom: 5px;
+  padding-top: 51px;
+  padding-bottom: 7px;
+
+  &:hover,
+  &:focus {
+    text-transform: capitalize;
+
+    @include vp-767 {
+      text-transform: unset;
+    }
+  }
 
   @include vp-767 {
     font-size: 22px;
-    padding-top: 45px;
-    padding-bottom: 9px;
+    line-height: 110.16%;
+    padding-top: 44px;
+    padding-bottom: 10px;
   }
 }
 
 .subscription__item p {
-  color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
+  font-style: normal;
   line-height: 150%;
   margin: 0;
-  padding-bottom: 83px;
+  padding-bottom: 14px;
 
   @include vp-767 {
-    padding-bottom: 63px;
+    padding-bottom: 12px;
   }
 }
 
 .subscription__price {
   position: relative;
-  padding-bottom: 57px;
+  padding-bottom: 26px;
+
+  @include vp-1200 {
+    padding-bottom: 28px;
+  }
 
   @include vp-767 {
-    padding-bottom: 53px;
+    padding-bottom: 24px;
   }
 }
 
-.subscription__shadow {
+.subscription__price span {
   color: #e8e8e8;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 113px;
+  font-size: 96px;
   font-weight: 700;
-  letter-spacing: 5px;
+  font-style: normal;
+  line-height: 150%;
 
   @include vp-767 {
-    font-size: 87px;
-    letter-spacing: 4px;
+    font-size: 80px;
   }
 }
 
-.subscription__shadow::before {
+.subscription__price span::before {
   content: attr(data-text);
   position: absolute;
   color: #103aae;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 63px;
+  font-size: 58px;
   font-weight: 700;
-  left: 19px;
-  top: 21px;
+  line-height: 150%;
+  left: 20px;
+  top: 52px;
 
   @include vp-767 {
-    font-size: 51px;
-    left: 14px;
-    top: 19px;
+    font-size: 48px;
+    left: 16px;
+    top: 42px;
     padding-bottom: 50px;
   }
 }
 
 .subscription__svg {
   position: absolute;
-  top: 9px;
-  right: 16px;
+  top: 73px;
+  right: 18px;
 
   @include vp-767 {
     width: 24px;
     height: 33px;
-    top: 13px;
-    right: 11px;
+    top: 63px;
+    right: 18px;
   }
 }
 
 .subscription__btn {
   color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
+  line-height: normal;
+  font-style: normal;
   text-transform: uppercase;
-  padding: 19px 44px;
+  padding: 26px 45px;
   background-color: $color-default-white;
   border: 2px solid #102654;
 
@@ -280,11 +298,15 @@
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: rgba(255, 255, 255, 0.5);
   }
+
+  @include vp-1200 {
+    padding: 25px 45px;
+  }
 }
 
 .subscription__pancakes {
   position: absolute;
-  top: 508px;
+  top: 505px;
   right: 0;
   z-index: 1;
 
@@ -293,7 +315,6 @@
     position: absolute;
     right: 0;
     top: 1460px;
-    bottom: -120px;
   }
 
   @include vp-767 {

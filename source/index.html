@@ -8,6 +8,7 @@
   <meta name="description" content="Фитнес центр">
   <title>SUPERGYM</title>
   <link rel="preload" href="fonts/alumnisans-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,22 +17,29 @@
     <header>
 
       <div class="header">
-        <div>
-          <div class="header__text">
-            <h1>SUPERGYM</h1>
+        <div class="header__centerer">
+          <div class="header__logo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-logo-desktop.webp 1x, img/header-logo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/header-logo-tablet.webp 1x, img/header-logo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/header-logo-phone.webp 1x, img/header-logo-phone@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/header-logo-desktop.png 1x, img/header-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/header-logo-tablet.png 1x, img/header-logo-tablet@2x.png 2x">
+              <img class="header__image" src="./img/header-logo-phone.png" srcset="img/header-logo-phone@2x.png 2x" alt="Логотип компании">
+            </picture>
             <a class="header__phone" href="#">
               8-800-555-55-55
             </a>
           </div>
           <div class="header__wrapper">
             <div class="header__description">
-              <span class="header__link">Тренажёрный зал</span>
-              <span class="header__link">Групповые занятия</span>
-              <span class="header__link">Кардио-зона</span>
+              <p>Тренажёрный зал</p>
+              <p>Групповые занятия</p>
+              <p>Кардио-зона</p>
             </div>
             <div class="header__location">
-              <h2 class="header__subject">Омск</h2>
-              <p class="header__title">Фитнес центр</p>
+              <h1>Омск</h1>
+              <p>Фитнес центр</p>
               <a class="header__btn btn" href="#section1">Купить абонемент</a>
             </div>
             <div class="header__img">
@@ -92,19 +100,19 @@
       </section>
 
       <section class="subscription">
-        <div>
+        <div class="subscription__centerer">
           <h3 id="section1">Абонементы</h3>
           <div class="subscription__tabs">
-            <a class="subscription__link" href="#tabs-1">1 месяц</a>
-            <a class="subscription__link" href="#tabs-2">6 месяцев</a>
-            <a class="subscription__link" href="#tabs-3">12 месяцев</a>
+            <p>1 месяц</p>
+            <p>6 месяцев</p>
+            <p>12 месяцев</p>
           </div>
           <ul class="subscription__list">
             <li class="subscription__item">
               <h4>С тренером</h4>
               <p>12 занятий</p>
               <div class="subscription__price">
-                <span class="subscription__shadow" data-text="5000">5000</span>
+                <span data-text="5000">5000</span>
                 <svg class="subscription__svg" width="30" height="42">
                   <use xlink:href="/img/sprite.svg#ruble"></use>
                 </svg>
@@ -115,7 +123,7 @@
               <h4>Дневной</h4>
               <p>с 8:00 до 17:00</p>
               <div class="subscription__price">
-                <span class="subscription__shadow" data-text="1700">1700</span>
+                <span data-text="1700">1700</span>
                 <svg class="subscription__svg" width="30" height="42">
                   <use xlink:href="/img/sprite.svg#ruble"></use>
                 </svg>
@@ -126,7 +134,7 @@
               <h4>Полный день</h4>
               <p>с 8:00 до 22:00</p>
               <div class="subscription__price">
-                <span class="subscription__shadow" data-text="2700">2700</span>
+                <span data-text="2700">2700</span>
                 <svg class="subscription__svg" width="30" height="42">
                   <use xlink:href="/img/sprite.svg#ruble"></use>
                 </svg>
@@ -139,7 +147,7 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/pancakes-tablet.webp 1x, img/pancakes-tablet@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/pancakes-desktop.png 1x, img/pancakes-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/pancakes-tablet.png 1x, img/pancakes-tablet@2x.png 2x">
-            <img class="subscription__pancakes" src="#" alt="Спортивные диски">
+            <img class="subscription__pancakes" src="#" alt="">
           </picture>
         </div>
       </section>
@@ -152,21 +160,21 @@
             </div>
             <div class="super-games__title">
               <div class="super-games__date">
-                <h4 class="super-games__headline">Дата</h4>
+                <h4>Дата</h4>
                 <div class="super-games__period">
-                  <p class="super-games__number">7</p>
-                  <span class="super-games__desc">Марта 2019</span>
+                  <p>7</p>
+                  <span>Марта 2019</span>
                 </div>
               </div>
               <div class="super-games__time">
-                <h4 class="super-games__headline">Время</h4>
-                <p class="super-games__number">12:00</p>
+                <h4>Время</h4>
+                <p>12:00</p>
               </div>
             </div>
           </div>
-          <p class="super-games__annual">
+          <h5>
             Ежегодные соревнования по CrossFit
-          </p>
+          </h5>
           <a href="#" class="super-games__btn btn">заполнить заявку</a>
         </div>
         <div class="super-games__img">
@@ -187,108 +195,124 @@
           <div class="swiper" id="trainers-slaider">
             <div class="trainer__wrapper swiper-wrapper">
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Анна">
-                <div class="trainer__description">
-                  <h4>Анна Павлова</h4>
-                  <span>Fitnes</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по Wellness Fitness</li>
-                    <li class="trainer__list">Опыт — 5 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Анна">
+                  <div class="trainer__description">
+                    <h4>Анна Павлова</h4>
+                    <span>Fitnes</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по Wellness Fitness</li>
+                      <li>Опыт — 5 лет</li>
+                    </ul>
+                  </div>
+                  <p>Анна Павлова</p>
                 </div>
-                <p>Анна Павлова</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer2.png" width="260" height="294" alt="Тренер Мария">
-                <div class="trainer__description">
-                  <h4>Мария Кетова</h4>
-                  <span>Fitnes</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по Wellness Fitness</li>
-                    <li class="trainer__list">Опыт — 5 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer2.png" width="260" height="294" alt="Тренер Мария">
+                  <div class="trainer__description">
+                    <h4>Мария Кетова</h4>
+                    <span>Fitnes</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по Wellness Fitness</li>
+                      <li>Опыт — 5 лет</li>
+                    </ul>
+                  </div>
+                  <p>Мария Кетова</p>
                 </div>
-                <p>Мария Кетова</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer3.png" width="260" height="294" alt="Тренер Алексей">
-                <div class="trainer__description">
-                  <h4>Алексей Лавров</h4>
-                  <span>CrossFit</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по CrossFit</li>
-                    <li class="trainer__list">Опыт — 6 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer3.png" width="260" height="294" alt="Тренер Алексей">
+                  <div class="trainer__description">
+                    <h4>Алексей Лавров</h4>
+                    <span>CrossFit</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <p>Алексей Лавров</p>
                 </div>
-                <p>Алексей Лавров</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Екатерина">
-                <div class="trainer__description">
-                  <h4>Екатерина Титова</h4>
-                  <span>Fitnes</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по Wellness Fitness</li>
-                    <li class="trainer__list">Опыт — 5 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Екатерина">
+                  <div class="trainer__description">
+                    <h4>Екатерина Титова</h4>
+                    <span>Fitnes</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по Wellness Fitness</li>
+                      <li>Опыт — 5 лет</li>
+                    </ul>
+                  </div>
+                  <p>Екатерина Титова</p>
                 </div>
-                <p>Екатерина Титова</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer2.png" width="260" height="294" alt="Тренер Ольга">
-                <div class="trainer__description">
-                  <h4>Ольга Попова</h4>
-                  <span>Fitnes</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по Wellness Fitness</li>
-                    <li class="trainer__list">Опыт — 5 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer2.png" width="260" height="294" alt="Тренер Ольга">
+                  <div class="trainer__description">
+                    <h4>Ольга Попова</h4>
+                    <span>Fitnes</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по Wellness Fitness</li>
+                      <li>Опыт — 5 лет</li>
+                    </ul>
+                  </div>
+                  <p>Ольга Попова</p>
                 </div>
-                <p>Ольга Попова</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer3.png" width="260" height="294" alt="Тренер Вадим">
-                <div class="trainer__description">
-                  <h4>Вадим Немов</h4>
-                  <span>CrossFit</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по CrossFit</li>
-                    <li class="trainer__list">Опыт — 6 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer3.png" width="260" height="294" alt="Тренер Вадим">
+                  <div class="trainer__description">
+                    <h4>Вадим Немов</h4>
+                    <span>CrossFit</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <p>Вадим Немов</p>
                 </div>
-                <p>Вадим Немов</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Яна">
-                <div class="trainer__description">
-                  <h4>Яна</h4>
-                  <span>Fitnes</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 3 Trainer</li>
-                    <li class="trainer__list">Победитель чемпионата России по Wellness Fitness</li>
-                    <li class="trainer__list">Опыт — 5 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/trainer1.png" width="260" height="294" alt="Тренер Яна">
+                  <div class="trainer__description">
+                    <h4>Яна</h4>
+                    <span>Fitnes</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по Wellness Fitness</li>
+                      <li>Опыт — 5 лет</li>
+                    </ul>
+                  </div>
+                  <p>Яна Петрова</p>
                 </div>
-                <p>Яна Петрова</p>
               </div>
               <div class="trainer__slide swiper-slide">
-                <img class="trainer__img" src="./img/nevskii.png" width="260" height="294" alt="Тренер Александр">
-                <div class="trainer__description">
-                  <h4>Александр Невский</h4>
-                  <span>Body-Building</span>
-                  <ul class="trainer__item">
-                    <li class="trainer__list">Certified Level 10 Trainer</li>
-                    <li class="trainer__list">Выиграл конкурс "Мистер Вселенная"</li>
-                    <li class="trainer__list">Опыт — 6 лет</li>
-                  </ul>
+                <div class="trainer__hover">
+                  <img class="trainer__img" src="./img/nevskii.png" width="260" height="294" alt="Тренер Александр">
+                  <div class="trainer__description">
+                    <h4>Александр Невский</h4>
+                    <span>Body-Building</span>
+                    <ul class="trainer__item">
+                      <li>Certified Level 10 Trainer</li>
+                      <li>Выиграл конкурс "Мистер Вселенная"</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  <p>Александр Невский</p>
                 </div>
-                <p>Александр Невский</p>
               </div>
             </div>
           </div>
@@ -308,51 +332,49 @@
       <section class="advantages">
         <h3>Наши преимущества</h3>
         <div class="advantages-wrapper">
-          <div class="advantages-wrapper__container">
-            <div class="advantages-wrapper__box">
-              <div class="advantages-wrapper__quantity">
-                <h4>900</h4>
-                <p>кв/м</p>
-              </div>
-              <div class="advantages-wrapper__description">
-                <h5>Площадь</h5>
-                <p>Занимайтесь без очередей и толпучки</p>
-              </div>
+          <div class="advantages-wrapper__box">
+            <div class="advantages-wrapper__quantity">
+              <h4>900</h4>
+              <p>кв/м</p>
             </div>
-            <div class="advantages-wrapper__box">
-              <div class="advantages-wrapper__quantity">
-                <h4>350</h4>
-                <p>мест</p>
-              </div>
-              <div class="advantages-wrapper__description">
-                <h5>Комфорт</h5>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-              </div>
+            <div class="advantages-wrapper__description">
+              <h5>Площадь</h5>
+              <p>Занимайтесь без очередей и толпучки</p>
             </div>
-            <div class="advantages-wrapper__objects">
-              <h6>100</h6>
-              <p>Тренажеров</p>
-              <span>Современные тренажеры на все группы мышц</span>
+          </div>
+          <div class="advantages-wrapper__box">
+            <div class="advantages-wrapper__quantity">
+              <h4>350</h4>
+              <p>мест</p>
             </div>
-            <div class="advantages-wrapper__box">
-              <div class="advantages-wrapper__quantity">
-                <h4>70</h4>
-                <p>машин</p>
-              </div>
-              <div class="advantages-wrapper__description">
-                <h5>Собственная парковка</h5>
-                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-              </div>
+            <div class="advantages-wrapper__description">
+              <h5>Комфорт</h5>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
-            <div class="advantages-wrapper__box">
-              <div class="advantages-wrapper__quantity">
-                <h4>5+</h4>
-                <p>лет</p>
-              </div>
-              <div class="advantages-wrapper__description">
-                <h5>Тренерский опыт</h5>
-                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-              </div>
+          </div>
+          <div class="advantages-wrapper__objects">
+            <h6>100</h6>
+            <p>Тренажеров</p>
+            <span>Современные тренажеры на все группы мышц</span>
+          </div>
+          <div class="advantages-wrapper__box">
+            <div class="advantages-wrapper__quantity">
+              <h4>70</h4>
+              <p>машин</p>
+            </div>
+            <div class="advantages-wrapper__description">
+              <h5>Собственная парковка</h5>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
+          </div>
+          <div class="advantages-wrapper__box">
+            <div class="advantages-wrapper__quantity">
+              <h4>5+</h4>
+              <p>лет</p>
+            </div>
+            <div class="advantages-wrapper__description">
+              <h5>Тренерский опыт</h5>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </div>
         </div>
@@ -395,7 +417,7 @@
       </section>
 
       <section class="faq">
-        <div>
+        <div class="faq__centerer">
           <h3>Вопросы и ответы</h3>
           <div class="faq-wrapper">
             <div class="faq-wrapper__tabs" data-tabs="parent">
@@ -414,9 +436,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list" data-accordion="element">
                     <h4>Где можно посмотреть расписание?
@@ -425,9 +449,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list" data-accordion="element">
                     <h4>Есть кулеры в центре? Предоставляются полотенца?
@@ -436,9 +462,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list" data-accordion="element">
                     <h4>Сколько тренеров работает в клубе и какова <br>их квалификация?
@@ -447,9 +475,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      </p>
+                    </div>
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-2">
@@ -460,9 +490,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Можно ли заморозить абонемент?
@@ -471,9 +503,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Есть ли лимит по посещениям тренажерного зала и групповых занятий?
@@ -482,9 +516,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Что такое семейный доступ и доступ для друзей?
@@ -493,9 +529,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                      </p>
+                    </div>
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-3">
@@ -506,9 +544,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Проводятся ли в клубе какие-либо мероприятия или соревнования?
@@ -517,9 +557,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Можно ли приобрести в центре спортивное питание?
@@ -528,9 +570,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Есть ли в центре детская комната?
@@ -539,9 +583,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
+                      </p>
+                    </div>
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-4">
@@ -552,9 +598,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Можно ли приводить с собой детей на тренировки?
@@ -563,9 +611,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Какие дополнительные правила посещения центра?
@@ -574,9 +624,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                      </p>
+                    </div>
                   </li>
                   <li class="faq-wrapper__list ac" data-accordion="element">
                     <h4>Нужна ли медицинская справка для посещения залов и бассейна?
@@ -585,9 +637,11 @@
                         <use class="faq-wrapper__svg icon-open" xlink:href="/img/sprite.svg#open"></use>
                       </svg>
                       </h4>
-                    <p data-accordion="content">
-                      Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                    </p>
+                    <div class="faq-wrapper__block">
+                      <p data-accordion="content">
+                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                      </p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -694,11 +748,11 @@
           <h3>Бесплатное занятие</h3>
           <form class="feedback-form__data" action="#" method="get">
             <div class="feedback-form__container">
-              <div class="feedback-form__group" data-required data-validate-type="text" aria-label="name">
+              <div class="feedback-form__group" data-required data-validate-type="text" aria-label="Имя">
                 <input type="text" name="name" placeholder="Имя">
                 <span class="feedback-form__error">Введите имя</span>
               </div>
-              <div class="feedback-form__group" data-validate-type="phone" data-required data-on-input-validate aria-label="phone">
+              <div class="feedback-form__group" data-validate-type="phone" data-required data-on-input-validate aria-label="Телефон">
                 <input type="tel" name="phone" placeholder="Телефон">
                 <span class="feedback-form__error">Введите номер телефона</span>
               </div>
@@ -739,8 +793,8 @@
 
     </main>
     <footer>
-      <div>
-        <div class="footer">
+      <div class="footer">
+        <div class="footer__centerer">
           <ul class="footer__list">
             <li class="footer__item">
               <h3>Supergym</h3>
