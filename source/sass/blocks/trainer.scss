@@ -108,6 +108,10 @@
   padding: 58px 0;
   text-align: center;
   display: none;
+
+  @include vp-767 {
+    width: 226px;
+  }
 }
 
 .trainer__slide:hover .trainer__description,

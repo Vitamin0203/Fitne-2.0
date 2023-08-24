@@ -1,5 +1,4 @@
-(function(window) {
-
+function window() {
   'use strict';
 
   let uniqueId = 0;
@@ -9,7 +8,7 @@
    * @param {string|HTMLElement} selectorOrElement = container in which the script will be initialized
    * @param {object} userOptions = options defined by user
    */
-  const Accordion = function(selectorOrElement, userOptions) {
+  const Accordion = function (selectorOrElement, userOptions) {
     const _this = this;
     let eventsAttached = false;
 
@@ -28,20 +27,20 @@
        */
       init() {
         const defaults = {
-          duration: 600, // animation duration in ms {number}
-          ariaEnabled: true, // add ARIA elements to the HTML structure {boolean}
-          collapse: true, // allow collapse expanded panel {boolean}
-          showMultiple: false, // show multiple elements at the same time {boolean}
-          onlyChildNodes: true, // disabling this option will find all items in the container {boolean}
-          openOnInit: [], // show accordion elements during initialization {array}
-          elementClass: 'ac', // element class {string}
-          triggerClass: 'ac-trigger', // trigger class {string}
-          panelClass: 'ac-panel', // panel class {string}
-          activeClass: 'is-active', // active element class {string}
-          beforeOpen: () => {}, // calls before the item is opened {function}
-          onOpen: () => {}, // calls when the item is opened {function}
-          beforeClose: () => {}, // calls before the item is closed {function}
-          onClose: () => {} // calls when the item is closed {function}
+          duration: 600,
+          ariaEnabled: true,
+          collapse: true,
+          showMultiple: false,
+          onlyChildNodes: true,
+          openOnInit: [],
+          elementClass: 'ac',
+          triggerClass: 'ac-trigger',
+          panelClass: 'ac-panel',
+          activeClass: 'is-active',
+          beforeOpen: () => { },
+          onOpen: () => { },
+          beforeClose: () => { },
+          onClose: () => { } // calls when the item is closed {function}
         };
 
         // Extend default options
@@ -64,26 +63,26 @@
         const allElements = onlyChildNodes ? this.container.childNodes : this.container.querySelectorAll(cn(elementClass));
 
         this.elements = Array.from(allElements)
-          .filter((el) => el.classList && el.classList.contains(elementClass));
+            .filter((el) => el.classList && el.classList.contains(elementClass));
 
         this.firstElement = this.elements[0];
         this.lastElement = this.elements[this.elements.length - 1];
 
         this.elements
-          .filter((element) => !element.classList.contains(`js-enabled`))
-          .forEach((element) => {
+            .filter((element) => !element.classList.contains(`js-enabled`))
+            .forEach((element) => {
             // When JS is enabled, add the class to the element
-            element.classList.add('js-enabled');
+              element.classList.add('js-enabled');
 
-            this.generateIDs(element);
-            this.setARIA(element);
-            this.setTransition(element);
+              this.generateIDs(element);
+              this.setARIA(element);
+              this.setTransition(element);
 
-            const index = this.elements.indexOf(element);
+              const index = this.elements.indexOf(element);
 
-            uniqueId++;
-            openOnInit.includes(index) ? this.showElement(element, false) : this.closeElement(element, false);
-          });
+              uniqueId++;
+              openOnInit.includes(index) ? this.showElement(element, false) : this.closeElement(element, false);
+            });
       },
 
       /**
@@ -215,8 +214,8 @@
       },
 
       /**
-       * Focus next element
-       * @param {Event} e = event
+      * Focus next element
+      * @param {Event} e = event
        */
       focusNextElement(e) {
         const nextElIdx = this.currFocusedIdx + 1;
@@ -444,122 +443,126 @@
      */
     this.toggle = (elIdx) => {
       const el = core.elements[elIdx];
-      if (el) core.toggleElement(el);
-    };
+      if (el) {
+        core.toggleElement(el);
+      };
 
-    /**
-     * Open accordion element
-     * @param {number} elIdx = element index
-     */
-    this.open = (elIdx) => {
-      const el = core.elements[elIdx];
-      if (el) core.showElement(el);
-    };
+      /**
+       * Open accordion element
+       * @param {number} elIdx = element index
+       */
+      this.open = (elIdx) => {
+        const el = core.elements[elIdx];
+        if (el) {
+          core.showElement(el);
+        };
 
-    /**
-     * Open all hidden accordion elements
-     */
-    this.openAll = () => {
-      const { activeClass, onOpen } = core.options;
+        /**
+         * Open all hidden accordion elements
+         */
+        this.openAll = () => {
+          const { activeClass, onOpen } = core.options;
 
-      core.elements.forEach((element) => {
-        const isActive = element.classList.contains(activeClass);
+          core.elements.forEach((element) => {
+            const isActive = element.classList.contains(activeClass);
 
-        if (!isActive) {
-          core.showElement(element, false);
-          onOpen(element);
-        }
-      });
-    };
+            if (!isActive) {
+              core.showElement(element, false);
+              onOpen(element);
+            }
+          });
+        };
 
-    /**
-     * Close accordion element
-     * @param {number} elIdx = element index
-     */
-    this.close = (elIdx) => {
-      const el = core.elements[elIdx];
-      if (el) core.closeElement(el);
-    };
+        /**
+         * Close accordion element
+         * @param {number} elIdx = element index
+         */
+        this.close = (elIdx) => {
+          const el = core.elements[elIdx];
+          if (el) core.closeElement(el);
+        };
 
-    /**
-     * Close all active accordion elements
-     */
-    this.closeAll = () => {
-      const { activeClass, onClose } = core.options;
+        /**
+         * Close all active accordion elements
+         */
+        this.closeAll = () => {
+          const { activeClass, onClose } = core.options;
 
-      core.elements.forEach((element) => {
-        const isActive = element.classList.contains(activeClass);
+          core.elements.forEach((element) => {
+            const isActive = element.classList.contains(activeClass);
 
-        if (isActive) {
-          core.closeElement(element, false);
-          onClose(element);
-        }
-      });
-    };
+            if (isActive) {
+              core.closeElement(element, false);
+              onClose(element);
+            }
+          });
+        };
 
-    /**
-     * Destroy accordion instance
-     */
-    this.destroy = () => {
-      this.detachEvents();
-      this.openAll();
+        /**
+         * Destroy accordion instance
+         */
+        this.destroy = () => {
+          this.detachEvents();
+          this.openAll();
 
-      core.elements.forEach((element) => {
-        core.removeIDs(element);
-        core.removeARIA(element);
-        core.setTransition(element, true);
-      });
+          core.elements.forEach((element) => {
+            core.removeIDs(element);
+            core.removeARIA(element);
+            core.setTransition(element, true);
+          });
 
-      eventsAttached = true;
-    };
+          eventsAttached = true;
+        };
 
-    /**
-     * Update accordion elements
-     */
-    this.update = () => {
-      core.createDefinitions();
+        /**
+         * Update accordion elements
+         */
+        this.update = () => {
+          core.createDefinitions();
 
-      this.detachEvents();
-      this.attachEvents();
-    };
+          this.detachEvents();
+          this.attachEvents();
+        };
 
-    /**
-     * Get supported property and add webkit prefix if needed
-     * @param {string} property = property name
-     * @return {string} property = property with optional webkit prefix
-     */
-    const isWebkit = (property) => {
-      if (typeof document.documentElement.style[property] === 'string') {
-        return property;
+        /**
+         * Get supported property and add webkit prefix if needed
+         * @param {string} property = property name
+         * @return {string} property = property with optional webkit prefix
+         */
+        const isWebkit = (property) => {
+          if (typeof document.documentElement.style[property] === 'string') {
+            return property;
+          }
+
+          property = capitalizeFirstLetter(property);
+          property = `webkit${property}`;
+
+          return property;
+        };
+
+        /**
+         * Capitalize the first letter in the string
+         * @param {string} string = string
+         * @return {string} string = changed string
+         */
+        const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
+        /**
+         * Build class name
+         * @param {string} className = element class name
+         * @return {string} className = element class name with CSS.escape
+         */
+        const cn = (className) => `.${CSS.escape(className)}`;
+
+        core.init();
+      };
+
+      if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+        module.exports = Accordion;
+      } else {
+        window.Accordion = Accordion;
       }
 
-      property = capitalizeFirstLetter(property);
-      property = `webkit${property}`;
-
-      return property;
-    };
-
-    /**
-     * Capitalize the first letter in the string
-     * @param {string} string = string
-     * @return {string} string = changed string
-     */
-    const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
-
-    /**
-     * Build class name
-     * @param {string} className = element class name
-     * @return {string} className = element class name with CSS.escape
-     */
-    const cn = (className) => `.${CSS.escape(className)}`;
-
-    core.init();
+    }; (window);
   };
-
-  if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = Accordion;
-  } else {
-    window.Accordion = Accordion;
-  }
-
-})(window);
+}

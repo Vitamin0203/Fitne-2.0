@@ -7,7 +7,7 @@
 </g></symbol><symbol id="close" viewBox="0 0 42 42"><g fill="none">
 <g id="close">
 <circle id="circle" cx="21" cy="21" r="20.5" fill="#102654" stroke="#102654"/>
-<path id="icon/minus" d="M30 21H21H12" stroke="white"/>
+<path id="icon/minus" d="M30 21H21H12" stroke="#ffffff"/>
 </g>
 </g></symbol><symbol id="ellips" viewBox="0 0 100 100"><g fill="none">
 <circle cx="50" cy="50" r="49" stroke="linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%" stroke-opacity="0.2" stroke-width="2"/>

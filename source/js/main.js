@@ -4,9 +4,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {findVideos} from './vendor/video';
-import {initAccordions, accordions} from './vendor/init-accordion';
+import {Accordions} from './vendor/accordions';
 import {initTabs} from './vendor/init-tabs';
-import {initReviewsSlider, initTrainersSlider} from './vendor/swiper-slider';
+import {initTrainersSlider} from './vendor/trainer-slider';
+import {initReviewsSlider} from './vendor/reviews-slider';
 
 // ---------------------------------
 
@@ -19,8 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Табы и аккордеоны
   initTabs();
-  initAccordions();
-  setTimeout(() => accordions.updateAccordionsHeight(), 1000);
+  new Accordions();
 
   // вызов скрипта для видео
 
