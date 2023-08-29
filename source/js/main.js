@@ -1,10 +1,8 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-new */
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {findVideos} from './vendor/video';
-import {Accordions} from './vendor/accordions';
+import {initAccordions} from './vendor/init-accordion';
 import {initTabs} from './vendor/init-tabs';
 import {initTrainersSlider} from './vendor/trainer-slider';
 import {initReviewsSlider} from './vendor/reviews-slider';
@@ -19,8 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Табы и аккордеоны
+
   initTabs();
-  new Accordions();
+  initAccordions();
 
   // вызов скрипта для видео
 

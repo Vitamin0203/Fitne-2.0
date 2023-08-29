@@ -14,7 +14,7 @@
   @include vp-767 {
     width: 10px;
     height: 19px;
-    top: 12px;
+    top: 17px;
     left: 20px;
   }
 }
@@ -24,7 +24,7 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  top: calc(50% - 21px);
+  top: calc(50% - 26px);
 
   @include vp-767 {
     width: 50px;
@@ -60,7 +60,7 @@
 .reviews-box__arrow--prev {
   stroke: #102654;
   right: auto;
-  left: -75px;
+  left: -77px;
 
   @include vp-767 {
     left: -53px;

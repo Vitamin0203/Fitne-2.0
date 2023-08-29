@@ -1,7 +1,4 @@
 .super-games {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #ed0233;
   color: $color-default-white;
   overflow: hidden;
   margin: 119px 105px 106px;
@@ -17,8 +14,21 @@
   }
 }
 
+.super-games__centerer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .super-games__container {
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  background-color: #ed0233;
   padding: 51px 66px 79px 74px;
 
   @include vp-1200 {
@@ -63,7 +73,8 @@
     line-height: 96%;
     padding-top: 13px;
     letter-spacing: 1.44px;
-    padding-right: 27px;
+    padding-right: 25px;
+    padding-left: 18px;
   }
 
   @include vp-767 {
@@ -214,7 +225,7 @@
     font-size: 10.8px;
     padding-top: 3px;
     padding-left: 11px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
   }
 
   @include vp-767 {
@@ -239,7 +250,7 @@
     letter-spacing: 0.5px;
     line-height: normal;
     padding: 13px 53px;
-    margin-left: 10px;
+    margin-left: 9px;
   }
 
   @include vp-767 {
@@ -251,8 +262,14 @@
 .super-games__img {
   margin-left: -82px;
 
+  @include vp-1200 {
+    margin-left: -81px;
+  }
+
   @include vp-767 {
+    margin-bottom: -13px;
     margin-left: 0;
+    width: 100%;
   }
 }
 

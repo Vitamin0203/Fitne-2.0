@@ -1,11 +1,12 @@
 .contacts {
-  padding: 76px 143px 0 105px;
+  width: 100%;
+  padding: 79px 160px 0 120px;
   margin: 0 auto;
 
   @include vp-1200 {
-    padding-top: 72px;
-    padding-left: 98px;
-    padding-bottom: 62px;
+    padding-top: 75px;
+    padding-left: 133px;
+    padding-bottom: 64px;
   }
 
   @include vp-767 {

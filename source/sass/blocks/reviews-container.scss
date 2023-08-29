@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 62px 62px 42px 62px;
+  padding: 61px 62px 40px 62px;
   width: 560px;
   background-color: #1c3374;
   margin: 0 auto;
@@ -26,13 +26,13 @@
   display: flex;
 
   @include vp-1200 {
-    padding-top: 10px;
+    padding-top: 7px;
   }
 
   @include vp-767 {
-    padding-bottom: 17px;
+    padding-bottom: 20px;
     padding-top: 0;
-    padding-left: 40px;
+    padding-left: 42px;
   }
 }
 
@@ -47,7 +47,7 @@
   @include vp-767 {
     flex-direction: column;
     padding-top: 8px;
-    padding-left: 13px;
+    padding-left: 16px;
     line-height: 130%;
   }
 }
@@ -62,6 +62,7 @@
 
   @include vp-1200 {
     line-height: 156%;
+    margin-top: -43px;
   }
 
 

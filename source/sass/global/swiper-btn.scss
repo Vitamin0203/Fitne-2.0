@@ -14,13 +14,21 @@
 .swiper-button-next {
   stroke: #102654;
   left: auto;
-  right: -3px;
+  right: -73px;
+
+  @include vp-767 {
+    right: -3px;
+  }
 }
 
 .swiper-button-prev {
   stroke: #102654;
-  left: -7px;
+  left: -79px;
   right: auto;
+
+  @include vp-767 {
+    left: -8px;
+  }
 }
 
 .swiper-button-next,
@@ -28,12 +36,16 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  top: calc(50% - 10px);
+  top: calc(50% - 160px);
+
+  @include vp-1200 {
+    top: calc(50% - 161px);
+  }
 
   @include vp-767 {
     width: 50px;
     height: 50px;
-    top: calc(50% - 5px);
+    top: calc(50% - 146px);
   }
 
   &:hover,

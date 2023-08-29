@@ -1,20 +1,27 @@
 .gym {
-  display: flex;
   padding: 123px 103px 0;
 
   @include vp-1200 {
-    flex-direction: column;
     padding: 100px 45px 0;
   }
 
   @include vp-767 {
-    padding: 65px 0 0;
+    padding: 63px 0 0;
   }
 }
 
+.gym__centerer {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1200 {
+    flex-direction: column;
+  }
+}
 
 .gym__text {
-  padding: 36px 85px 0 60px;
+  padding: 37px 85px 0 60px;
   text-align: start;
 
   @include vp-1200 {
@@ -64,8 +71,8 @@
   line-height: 150%;
   letter-spacing: 0.19px;
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 41px;
 
   @include vp-1200 {
     padding-top: 0;
@@ -73,7 +80,7 @@
   }
 
   @include vp-767 {
-    padding-top: 4px;
+    padding-top: 6px;
     padding-bottom: 26px;
   }
 }
