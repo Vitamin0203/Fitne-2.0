@@ -3894,6 +3894,7 @@ img.video__media {
   grid-row: 1/1;
   -ms-grid-column: 3;
   grid-column: 3/3;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 @media (max-width: 1199px) {
   .advantages-wrapper__box:nth-child(4n) {
