@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding: 62px 15px 58px;
+    padding: 63px 15px 70px;
   }
 }
 
@@ -41,7 +41,7 @@
   @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     padding-right: 0;
   }
 }
@@ -78,7 +78,7 @@
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
@@ -87,14 +87,14 @@
   padding-bottom: 14px;
 
   @include vp-1200 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 27px;
   }
 
   @include vp-767 {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
   }
 
   &:hover,
@@ -148,7 +148,7 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     grid-gap: 35px;
-    padding-top: 45px;
+    padding-top: 34px;
   }
 }
 
@@ -162,12 +162,12 @@
 
   @include vp-1200 {
     width: 442px;
-    padding-bottom: 63px;
+    padding-bottom: 61px;
   }
 
   @include vp-767 {
     width: 290px;
-    padding-bottom: 59px;
+    padding-bottom: 48px;
   }
 
   &:hover,
@@ -179,13 +179,13 @@
 
 .subscription__item h4 {
   color: #102654;
-  font-size: 26.2px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 152.34%;
   font-style: normal;
   margin: 0;
-  padding-top: 51px;
-  padding-bottom: 6px;
+  padding-top: 50px;
+  padding-bottom: 5px;
 
   &:hover,
   &:focus {
@@ -204,18 +204,19 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 110.16%;
-    padding-top: 33px;
-    padding-bottom: 10px;
+    padding-top: 44px;
+    padding-left: 2px;
+    padding-bottom: 8px;
   }
 }
 
 .subscription__item p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 150%;
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
 
   @include vp-767 {
     padding-bottom: 12px;
@@ -224,20 +225,20 @@
 
 .subscription__price {
   position: relative;
-  padding-bottom: 31px;
+  padding-bottom: 27px;
 
   @include vp-1200 {
-    padding-bottom: 26px;
+    padding-bottom: 28px;
   }
 
   @include vp-767 {
-    padding-bottom: 27px;
+    padding-bottom: 25px;
   }
 }
 
 .subscription__price span {
   color: #e8e8e8;
-  font-size: 96px;
+  font-size: 100px;
   font-weight: 700;
   font-style: normal;
   line-height: 150%;
@@ -258,8 +259,8 @@
   font-size: 60px;
   font-weight: 700;
   line-height: 150%;
-  left: 15px;
-  top: 51px;
+  left: 18px;
+  top: 52px;
 
   @include vp-1200 {
     font-size: 61px;
@@ -267,20 +268,20 @@
   }
 
   @include vp-767 {
-    font-size: 49px;
-    left: 14px;
-    top: 45px;
+    font-size: 48px;
+    left: 15px;
+    top: 43px;
     padding-bottom: 50px;
   }
 }
 
 .subscription__svg {
   position: absolute;
-  top: 73px;
-  right: 14px;
+  top: 76px;
+  right: 18px;
 
   @include vp-1200 {
-    top: 75px;
+    top: 76px;
     right: 17px;
   }
 

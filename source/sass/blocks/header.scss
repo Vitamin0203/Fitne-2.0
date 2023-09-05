@@ -24,17 +24,20 @@
   margin: 0 auto;
   width: calc(100% - 206px);
 
-  @include vp-1200 {
+  @include vp-1320 {
     position: relative;
+  }
+
+  @include vp-1200 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
     top: -2px;
+  }
 
-    @include vp-767 {
-      top: 0;
-    }
+  @include vp-767 {
+    top: 0;
   }
 }
 
@@ -52,6 +55,7 @@
 
   @include vp-1200 {
     top: unset;
+    right: 1px;
     position: relative;
     font-size: 24px;
     font-weight: 700;
@@ -83,13 +87,13 @@
   flex-direction: column;
   color: $color-default-white;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 150%;
   margin: 0;
   text-align: end;
-  padding-top: 317px;
-  padding-left: 18px;
+  padding-top: 318px;
+  padding-left: 19px;
 
   @include vp-1200 {
     padding-top: 203px;
@@ -97,10 +101,10 @@
   }
 
   @include vp-767 {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 193px;
-    margin-right: -17px;
-    padding-left: 5px;
+    margin-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -109,8 +113,7 @@
   margin: 0;
 
   @include vp-767 {
-    line-height: 180%;
-    margin-right: -22px;
+    margin-right: -19px;
   }
 }
 
@@ -118,10 +121,10 @@
   font-family: "Alumni Sans", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
-  padding-top: 129px;
+  padding-top: 131px;
   padding-right: 63px;
   align-items: end;
-  padding-left: 14px;
+  padding-left: 18px;
 
   @include vp-1200 {
     padding-top: 70px;
@@ -131,23 +134,22 @@
 
   @include vp-767 {
     padding-top: 72px;
-    padding-left: 19px;
+    padding-left: 0;
     padding-right: 0;
   }
 }
 
 .header__location h1 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.44px;
+  letter-spacing: 3.8px;
   margin: 0;
   text-transform: uppercase;
-  padding-right: 54px;
+  padding-right: 51px;
 
   @include vp-1200 {
     font-size: 30px;
-    font-weight: 600;
     letter-spacing: 1.02px;
     padding-right: 9px;
     text-align: end;
@@ -155,29 +157,29 @@
 
   @include vp-767 {
     font-size: 23px;
-    font-weight: 600;
-    letter-spacing: 0.84px;
-    padding-right: 6px;
+    letter-spacing: 1.8px;
+    padding-right: 3px;
   }
 }
 
 .header__location p {
-  font-size: 94px;
+  font-size: 95px;
   font-weight: 600;
-  line-height: 119%;
-  letter-spacing: 4.6px;
+  line-height: 117%;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-align: end;
   width: min-content;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 47px;
+  padding-top: 19px;
+  padding-bottom: 49px;
 
   @include vp-1200 {
     font-size: 72px;
     text-transform: unset;
     font-style: normal;
     font-weight: 600;
+    line-height: 119%;
     letter-spacing: 3.6px;
     padding-top: 10px;
     padding-right: 4px;
@@ -185,11 +187,11 @@
   }
 
   @include vp-767 {
-    font-size: 73px;
-    line-height: 116%;
-    padding-bottom: 25px;
+    font-size: 72px;
+    line-height: 119%;
+    padding-bottom: 23px;
     padding-top: 16px;
-    padding-left: 9px;
+    padding-left: 0;
     padding-right: 0;
   }
 }
@@ -203,15 +205,14 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   width: 235px;
-  padding: 19px 40px;
+  padding: 18px 40px;
   background-color: transparent;
   border: $color-default-white solid 4px;
 
   @include vp-1200 {
-    font-size: 12px;
     width: 190px;
-    padding: 21px 16px;
-    margin-left: 4px;
+    padding: 21px 15px;
+    margin-left: 6px;
   }
 
   @include vp-767 {

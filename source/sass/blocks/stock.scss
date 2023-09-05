@@ -1,5 +1,5 @@
 .stock {
-  padding: 156px 103px 117px;
+  padding: 156px 103px 119px;
 
   @include vp-1200 {
     padding: 105px 45px 100px 45px;
@@ -60,7 +60,7 @@
   padding: 34px 45px;
 
   @include vp-1200 {
-    padding-bottom: 43px;
+    padding-bottom: 44px;
   }
 
   @include vp-767 {
@@ -82,26 +82,26 @@
 .stock__depiction p {
   font-size: 70px;
   font-weight: 700;
-  line-height: 80%;
+  line-height: 83%;
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 
   @include vp-1200 {
     line-height: 86%;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
   }
 
   @include vp-767 {
     font-size: 70px;
     line-height: 85%;
-    padding-bottom: 21px;
+    padding-bottom: 17px;
   }
 }
 
 .stock__depiction div {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 140%;
   margin: 0;
 
   @include vp-1200 {
@@ -109,12 +109,12 @@
   }
 
   @include vp-767 {
-    font-size: 14.5px;
+    font-size: 16px;
     line-height: 160%;
     text-align: center;
-    padding-bottom: 21px;
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-bottom: 20px;
+    padding-left: 19px;
+    padding-right: 17px;
   }
 }
 
@@ -127,14 +127,14 @@
   line-height: normal;
   text-transform: uppercase;
   color: $color-default-white;
-  padding-top: 190px;
+  padding-top: 188px;
 
   @include vp-1200 {
-    padding-top: 192px;
+    padding-top: 187px;
   }
 
   @include vp-767 {
-    padding-bottom: 37px;
+    padding-bottom: 38px;
     padding-top: 0;
   }
 
@@ -212,7 +212,7 @@
   }
 
   @include vp-767 {
-    padding: 32px 43px 40px;
+    padding: 30px 43px 42px;
   }
 }
 
@@ -220,7 +220,7 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 150%;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   margin: 0;
 
   @include vp-1200 {
@@ -228,34 +228,32 @@
   }
 
   @include vp-767 {
-    font-size: 24px;
+    font-size: 26px;
+    letter-spacing: 0;
   }
 }
 
 .stock__addition-offer p {
-  font-size: 14.3px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 140%;
   padding-bottom: 66px;
   margin: 0;
 
   @include vp-1200 {
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0.29px;
     padding-top: 4px;
     padding-bottom: 41px;
     padding-right: 64px;
   }
 
   @include vp-767 {
-    font-size: 13px;
-    line-height: 160%;
-    letter-spacing: unset;
-    padding-bottom: 16px;
-    padding-top: 6px;
-    padding-left: 14px;
-    padding-right: 14px;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: normal;
+    padding-bottom: 14px;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -266,8 +264,8 @@
   }
 
   @include vp-767 {
-    padding-bottom: 16px;
-    padding-right: 11px;
+    padding-bottom: 14px;
+    padding-right: 0px;
   }
 }
 

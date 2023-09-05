@@ -66,7 +66,7 @@
   padding-top: 22px;
 
   @include vp-1200 {
-    padding-top: 14px;
+    padding-top: 15px;
   }
 
   @include vp-767 {
@@ -76,7 +76,15 @@
 
 .advantages-wrapper__box:nth-child(2n) .advantages-wrapper__description h5 {
   @include vp-767 {
-    padding-bottom: 4px;
+    padding-bottom: 1px;
+  }
+}
+
+.advantages-wrapper__box:nth-child(2n) .advantages-wrapper__description p {
+  @include vp-767 {
+    padding-top: 0;
+    padding-left: 63px;
+    padding-right: 66px;
   }
 }
 
@@ -87,6 +95,7 @@
 
   @include vp-1200 {
     grid-column: 2 / 2;
+    border-bottom: none;
   }
 
   @include vp-767 {
@@ -98,7 +107,7 @@
   padding-left: 6px;
 
   @include vp-1200 {
-    padding-left: 3px;
+    padding-left: 4px;
   }
 
   @include vp-767 {
@@ -107,12 +116,41 @@
 }
 
 .advantages-wrapper__box:nth-child(4n) .advantages-wrapper__quantity p {
-  padding-left: 5px;
+  padding-left: 7px;
+
+  @include vp-1200 {
+    padding-left: 5px;
+  }
 
   @include vp-767 {
     padding-left: 0;
     margin-top: -19px;
   }
+}
+
+.advantages-wrapper__box:nth-child(4n) .advantages-wrapper__description p {
+  padding-right: 5px;
+
+  @include vp-1200 {
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    padding-right: 46px;
+    padding-left: 46px;
+  }
+}
+
+.advantages-wrapper__box:nth-child(4n) .advantages-wrapper__description {
+  @include vp-1200 {
+    padding-top: 14px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+  }
+
 }
 
 .advantages-wrapper__box:nth-child(5n) {
@@ -128,7 +166,7 @@
 
   @include vp-767 {
     order: 5;
-    padding-top: 23px;
+    padding-top: 21px;
     padding-right: 5px;
   }
 }
@@ -141,20 +179,12 @@
   }
 }
 
-.advantages-wrapper__box:nth-child(5n) .advantages-wrapper__description h5 {
-  padding-bottom: 8px;
+.advantages-wrapper__box:nth-child(5n) .advantages-wrapper__quantity p {
+  padding-left: 6px;
 
   @include vp-1200 {
-    padding-bottom: 0;
+    padding-left: 4px;
   }
-
-  @include vp-767 {
-    padding-bottom: 3px;
-  }
-}
-
-.advantages-wrapper__box:nth-child(5n) .advantages-wrapper__quantity p {
-  padding-left: 5px;
 }
 
 .advantages-wrapper__box:nth-child(5n) .advantages-wrapper__description {
@@ -162,7 +192,7 @@
   padding-left: 2px;
 
   @include vp-1200 {
-    padding-top: 14px;
+    padding-top: 15px;
     padding-left: 1px;
   }
 
@@ -172,10 +202,18 @@
   }
 }
 
+.advantages-wrapper__box:nth-child(5n) .advantages-wrapper__description h5 {
+  @include vp-767 {
+    margin-top: -6px;
+    padding-bottom: 0;
+  }
+}
+
 .advantages-wrapper__box:nth-child(5n) .advantages-wrapper__description p {
   @include vp-767 {
     padding-left: 38px;
     padding-right: 38px;
+    padding-top: 0;
   }
 }
 
@@ -223,7 +261,7 @@
   }
 
   @include vp-767 {
-    margin-top: -21px;
+    margin-top: -20px;
   }
 }
 
@@ -245,34 +283,34 @@
   font-weight: 700;
   line-height: 150%;
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 
   @include vp-1200 {
     font-size: 20px;
-    padding-bottom: 1px;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
     text-align: center;
-    margin-top: -6px;
-    padding-bottom: 7px;
+    margin-top: -8px;
+    padding-bottom: 5px;
   }
 }
 
 .advantages-wrapper__description p {
   color: #102654;
-  font-size: 13.6px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 150%;
+  line-height: 140%;
   margin: 0;
 
   @include vp-1200 {
-    font-size: 13.9px;
+    line-height: 136%;
+    padding-top: 2px;
   }
 
   @include vp-767 {
-    font-size: 14px;
-    line-height: 147%;
+    line-height: 140%;
     text-align: center;
     padding-left: 47px;
     padding-right: 46px;
@@ -319,12 +357,14 @@
 
   @include vp-1200 {
     line-height: 100%;
-    padding-top: 31px;
+    padding-top: 32px;
     padding-bottom: 0;
   }
 
   @include vp-767 {
-    padding-top: 45px;
+    font-size: 74px;
+    padding-top: 44px;
+    padding-right: 4px;
     line-height: 85%;
     padding-bottom: 0;
   }
@@ -336,12 +376,12 @@
   font-weight: 700;
   line-height: 150%;
   margin: 0;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 
   @include vp-1200 {
     font-size: 22px;
     padding-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
   }
 
   @include vp-767 {
@@ -352,22 +392,23 @@
 .advantages-wrapper__objects span {
   display: inline-block;
   color: $color-default-white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 167%;
+  line-height: 150%;
   padding-right: 29px;
-  padding-left: 25px;
+  padding-left: 28px;
   padding-bottom: 60px;
 
   @include vp-1200 {
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     padding-left: 135px;
     padding-right: 135px;
   }
 
   @include vp-767 {
+    line-height: 149%;
     padding-bottom: 44px;
-    padding-left: 74px;
-    padding-right: 76px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }

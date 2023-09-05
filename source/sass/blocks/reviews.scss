@@ -1,16 +1,16 @@
 .reviews {
   width: 100%;
   max-width: 560px;
-  padding: 144px 0 170px;
+  padding: 140px 0 170px;
   margin: 0 auto;
 
   @include vp-1200 {
-    padding: 106px 0 151px;
+    padding: 105px 0 152px;
     max-width: 566px;
   }
 
   @include vp-767 {
-    padding: 71px 0 121px;
+    padding: 71px 0 120px;
     max-width: 226px;
   }
 }
@@ -28,7 +28,7 @@
   @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    padding-bottom: 52px;
+    padding-bottom: 53px;
     padding-right: 5px;
   }
 
