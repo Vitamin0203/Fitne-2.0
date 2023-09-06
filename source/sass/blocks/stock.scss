@@ -252,8 +252,8 @@
     letter-spacing: normal;
     padding-bottom: 14px;
     padding-top: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -265,7 +265,7 @@
 
   @include vp-767 {
     padding-bottom: 14px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
