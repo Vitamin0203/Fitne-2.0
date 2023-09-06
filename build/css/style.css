@@ -4440,8 +4440,9 @@ img.video__media {
   letter-spacing: 0.7px;
   line-height: normal;
   text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
   color: #ffffff;
-  padding-top: 188px;
+  margin-top: 188px;
 }
 @media (max-width: 1199px) {
   .stock__depiction-more {
@@ -4454,28 +4455,15 @@ img.video__media {
     padding-top: 0;
   }
 }
-.stock__depiction-more::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 78px;
-  border-bottom: 2px solid #ffffff;
-}
-@media (max-width: 767px) {
-  .stock__depiction-more::after {
-    width: 80px;
-  }
-}
 .stock__depiction-more:hover {
   opacity: 0.8;
 }
 .stock__depiction-more:focus {
-  padding: 10px;
   border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .stock__depiction-more:active {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ffffff;
+  opacity: 1;
 }
 
 @media (max-width: 1199px) {
@@ -4577,8 +4565,8 @@ img.video__media {
     letter-spacing: normal;
     padding-bottom: 14px;
     padding-top: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -4591,7 +4579,7 @@ img.video__media {
 @media (max-width: 767px) {
   .stock__addition-offer:nth-child(2n) p {
     padding-bottom: 14px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
@@ -4641,10 +4629,6 @@ img.video__media {
     font-size: 32px;
     letter-spacing: 0.96px;
   }
-}
-
-.feedback {
-  margin-top: -51px;
 }
 
 .feedback__centerer {
@@ -4871,7 +4855,7 @@ img.video__media {
 
 .contacts {
   width: 100%;
-  padding: 78px 0 121px;
+  padding: 78px 0 64px 121px;
   margin: 0 auto;
   border-top: 1px solid #74819C;
 }
@@ -5032,7 +5016,7 @@ img.video__media {
   position: relative;
   background-color: #030a1a;
   color: #ffffff;
-  padding: 41px 104px 42px 103px;
+  padding: 41px 104px 38px 103px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5060,6 +5044,7 @@ img.video__media {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .footer__list {
   display: -ms-grid;
   display: grid;
@@ -5479,7 +5464,7 @@ img.video__media {
 .reviews {
   width: 100%;
   max-width: 560px;
-  padding: 140px 0 170px;
+  padding: 140px 0 119px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {

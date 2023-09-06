@@ -126,8 +126,9 @@
   letter-spacing: 0.7px;
   line-height: normal;
   text-transform: uppercase;
+  border-bottom: 1px solid $color-default-white;
   color: $color-default-white;
-  padding-top: 188px;
+  margin-top: 188px;
 
   @include vp-1200 {
     padding-top: 187px;
@@ -138,30 +139,17 @@
     padding-top: 0;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 78px;
-    border-bottom: 2px solid $color-default-white;
-
-    @include vp-767 {
-      width: 80px;
-    }
-  }
-
   &:hover {
     opacity: 0.8;
   }
 
   &:focus {
-    padding: 10px;
     border: 1px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
   }
 
   &:active {
-    padding-bottom: 5px;
-    border-bottom: 2px solid $color-default-white;
+    opacity: 1;
   }
 }
 
