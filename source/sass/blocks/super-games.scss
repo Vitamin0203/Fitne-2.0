@@ -10,7 +10,7 @@
   @include vp-767 {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 71px 15px 63px;
+    margin: 71px 15px 62px;
   }
 }
 
@@ -236,7 +236,7 @@
   @include vp-767 {
     padding-top: 3px;
     padding-left: 12px;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
   }
 }
 
@@ -273,7 +273,6 @@
   }
 
   @include vp-767 {
-    margin-bottom: -11px;
     margin-left: 0;
     width: 100%;
   }
@@ -281,7 +280,6 @@
 
 .super-games__foto {
   height: 100%;
-  width: 100%;
   background-size: cover;
   background-position: center;
   object-fit: cover;

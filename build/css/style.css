@@ -3203,7 +3203,7 @@ img.video__media {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    margin: 71px 15px 63px;
+    margin: 71px 15px 62px;
   }
 }
 
@@ -3461,7 +3461,7 @@ img.video__media {
   .super-games__container h5 {
     padding-top: 3px;
     padding-left: 12px;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
   }
 }
 
@@ -3504,7 +3504,6 @@ img.video__media {
 }
 @media (max-width: 767px) {
   .super-games__img {
-    margin-bottom: -11px;
     margin-left: 0;
     width: 100%;
   }
@@ -3512,7 +3511,6 @@ img.video__media {
 
 .super-games__foto {
   height: 100%;
-  width: 100%;
   background-size: cover;
   background-position: center;
   -o-object-fit: cover;
@@ -4377,7 +4375,7 @@ img.video__media {
     padding-top: 35px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 9px;
+    padding-bottom: 46px;
     text-align: center;
   }
 }
@@ -4446,21 +4444,31 @@ img.video__media {
 }
 @media (max-width: 1199px) {
   .stock__depiction-more {
-    padding-top: 187px;
+    margin-top: 187px;
   }
 }
 @media (max-width: 767px) {
   .stock__depiction-more {
-    padding-bottom: 38px;
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 .stock__depiction-more:hover {
   opacity: 0.8;
 }
 .stock__depiction-more:focus {
+  padding: 10px;
   border: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  margin-top: 178px;
+}
+@media (max-width: 1199px) {
+  .stock__depiction-more:focus {
+    margin-top: 169px;
+  }
+}
+@media (max-width: 767px) {
+  .stock__depiction-more:focus {
+    margin-top: 0;
+  }
 }
 .stock__depiction-more:active {
   opacity: 1;
@@ -4521,7 +4529,7 @@ img.video__media {
 }
 @media (max-width: 767px) {
   .stock__addition-offer {
-    padding: 30px 43px 42px;
+    padding: 30px 43px 40px;
   }
 }
 
@@ -4548,13 +4556,11 @@ img.video__media {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  padding-bottom: 66px;
   margin: 0;
 }
 @media (max-width: 1199px) {
   .stock__addition-offer p {
     padding-top: 4px;
-    padding-bottom: 41px;
     padding-right: 64px;
   }
 }
@@ -4563,7 +4569,6 @@ img.video__media {
     font-size: 16px;
     line-height: 140%;
     letter-spacing: normal;
-    padding-bottom: 14px;
     padding-top: 2px;
     padding-left: 0;
     padding-right: 0;
@@ -4573,13 +4578,12 @@ img.video__media {
 @media (max-width: 1199px) {
   .stock__addition-offer:nth-child(2n) p {
     padding-right: 0;
-    padding-bottom: 64px;
+    padding-bottom: 22px;
   }
 }
 @media (max-width: 767px) {
   .stock__addition-offer:nth-child(2n) p {
-    padding-bottom: 14px;
-    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -4592,21 +4596,45 @@ img.video__media {
   letter-spacing: 0.6px;
   line-height: normal;
   text-transform: uppercase;
+  margin-top: 72px;
+  border-bottom: 1px solid #1c3374;
 }
-.stock__addition-more::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 67px;
-  border-bottom: 2px solid #1c3374;
+@media (max-width: 1199px) {
+  .stock__addition-more {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .stock__addition-more {
+    margin-top: 27px;
+  }
+}
+.stock__addition-more:hover {
+  opacity: 0.8;
 }
 .stock__addition-more:focus {
+  margin-top: 52px;
   padding: 10px;
   border: 1px solid #1c3374;
 }
+@media (max-width: 1199px) {
+  .stock__addition-more:focus {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .stock__addition-more:focus {
+    margin-top: 16px;
+  }
+}
 .stock__addition-more:active {
-  color: #1c3374;
-  border-bottom: 2px solid #1c3374;
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .stock__addition-more:first-child {
+    margin-top: 70px;
+  }
 }
 
 .stock-container {
@@ -5149,6 +5177,9 @@ img.video__media {
 }
 @media (max-width: 767px) {
   .footer__list-social {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding-top: 13px;
     margin-left: -160px;
   }
@@ -5475,7 +5506,7 @@ img.video__media {
 }
 @media (max-width: 767px) {
   .reviews {
-    padding: 71px 0 120px;
+    padding: 71px 0 70px;
     max-width: 226px;
   }
 }
@@ -5645,7 +5676,7 @@ img.video__media {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 8px;
+    padding-top: 9px;
     padding-left: 16px;
     line-height: 130%;
   }
