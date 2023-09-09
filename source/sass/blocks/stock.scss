@@ -67,7 +67,7 @@
     padding-top: 35px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 46px;
+    padding-bottom: 45px;
     text-align: center;
   }
 }
@@ -94,7 +94,7 @@
   @include vp-767 {
     font-size: 70px;
     line-height: 85%;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 }
 
@@ -127,6 +127,7 @@
   line-height: normal;
   text-transform: uppercase;
   border-bottom: 1px solid $color-default-white;
+  padding-bottom: 1px;
   color: $color-default-white;
   margin-top: 188px;
 
