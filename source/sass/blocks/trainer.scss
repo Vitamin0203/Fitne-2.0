@@ -1,12 +1,12 @@
 .trainer {
-  padding-bottom: 98px;
+  padding-bottom: 104px;
 
   @include vp-1200 {
-    padding-bottom: 94px;
+    padding-bottom: 101px;
   }
 
   @include vp-767 {
-    padding-bottom: 63px;
+    padding-bottom: 69px;
   }
 }
 
@@ -80,7 +80,6 @@
 .trainer__hover {
   position: relative;
   margin: auto;
-  width: 260px;
 
   @include vp-767 {
     width: 226px;
@@ -88,8 +87,10 @@
 }
 
 .trainer__img {
-  display: inline-block;
+  display: block;
   position: relative;
+  width: 100%;
+  height: 294px;
 
   @include vp-767 {
     width: 226px;
@@ -111,6 +112,7 @@
 
   @include vp-1200 {
     width: 268px;
+    padding: 55px 0;
   }
 
   @include vp-767 {
@@ -162,31 +164,38 @@
   padding-top: 36px;
 
   @include vp-1200 {
-    padding-left: 66px;
-    padding-top: 33px;
+    padding-left: 70px;
+    padding-top: 31px;
   }
 
   @include vp-767 {
-    font-size: 16px;
     padding-left: 47px;
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 34px;
   }
 }
 
 .trainer__item li {
-  font-size: 12.5px;
-  padding-bottom: 12px;
+  font-size: 14px;
+  padding-bottom: 13px;
 }
 
 
 .trainer__slide p {
   position: absolute;
-  bottom: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  bottom: 22px;
   margin: 0;
-  left: -6px;
+  left: -2px;
   right: 0;
   color: $color-default-white;
+
+  @include vp-1200 {
+    left: 7px;
+  }
 }
 
 .trainer__slide:hover p {

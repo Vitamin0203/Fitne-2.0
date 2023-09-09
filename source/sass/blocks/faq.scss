@@ -1,13 +1,13 @@
 .faq {
   width: 100%;
   height: 100%;
-  padding: 141px 103px 121px 103px;
+  padding: 142px 103px 121px 103px;
   background-color: #f8f9fc;
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
 
   @include vp-1200 {
-    padding: 115px 45px 100px 45px;
+    padding: 114px 45px 100px 45px;
   }
 
   @include vp-767 {
@@ -32,7 +32,7 @@
   @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    padding-bottom: 52px;
+    padding-bottom: 54px;
     padding-right: 1px;
     text-align: center;
   }

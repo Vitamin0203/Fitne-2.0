@@ -41,7 +41,7 @@
 }
 
 .faq-wrapper .is-active.faq-wrapper__list {
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   @include vp-767 {
     padding-bottom: 20px;
@@ -69,13 +69,13 @@
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.1px;
-  padding-top: 27px;
-  padding-bottom: 22px;
+  padding-top: 25px;
+  padding-bottom: 17px;
 
   @include vp-1200 {
-    padding-top: 26px;
-    padding-bottom: 24px;
-    line-height: 118%;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    line-height: 134%;
   }
 
   @include vp-767 {
@@ -87,12 +87,12 @@
 }
 
 .faq-wrapper .is-active.faq-wrapper__list h4 {
-  padding-top: 26px;
-  padding-bottom: 9px;
+  padding-top: 24px;
+  padding-bottom: 2px;
 
   @include vp-1200 {
-    padding-top: 25px;
-    padding-bottom: 7px;
+    padding-top: 22px;
+    padding-bottom: 1px;
   }
 
   @include vp-767 {
@@ -101,11 +101,24 @@
   }
 }
 
+.faq-wrapper__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  padding-top: 1px;
+
+  @include vp-1200 {
+    padding-top: 3px;
+  }
+}
+
 .faq-wrapper__icon {
   margin-left: 20px;
   display: block;
   flex-shrink: 0;
+}
 
+.faq-wrapper__list svg {
   @include vp-767 {
     width: 32px;
     height: 32px;
@@ -136,10 +149,10 @@
   }
 }
 
-.faq-wrapper__list.is-active .faq-wrapper__icon .icon-close {
+.faq-wrapper__list.is-active .icon-close {
   display: block;
 }
 
-.faq-wrapper__list .is-active .faq-wrapper__icon .icon-open {
+.faq-wrapper__list.is-active .icon-open {
   display: none;
 }

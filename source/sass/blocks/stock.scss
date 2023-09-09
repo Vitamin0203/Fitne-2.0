@@ -2,7 +2,7 @@
   padding: 156px 103px 119px;
 
   @include vp-1200 {
-    padding: 105px 45px 100px 45px;
+    padding: 106px 45px 100px 45px;
   }
 
   @include vp-767 {
@@ -88,7 +88,7 @@
 
   @include vp-1200 {
     line-height: 86%;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   @include vp-767 {
@@ -131,7 +131,7 @@
   margin-top: 188px;
 
   @include vp-1200 {
-    margin-top: 187px;
+    margin-top: 188px;
   }
 
   @include vp-767 {
@@ -236,7 +236,7 @@
   margin: 0;
 
   @include vp-1200 {
-    padding-top: 4px;
+    padding-top: 3px;
     padding-right: 64px;
   }
 
@@ -270,7 +270,7 @@
   letter-spacing: 0.6px;
   line-height: normal;
   text-transform: uppercase;
-  margin-top: 72px;
+  margin-top: 71px;
   border-bottom: 1px solid #1c3374;
 
   @include vp-1200 {
@@ -290,7 +290,7 @@
     padding: 10px;
     border: 1px solid #1c3374;
 
-     @include vp-1200 {
+    @include vp-1200 {
       margin-top: 30px;
     }
 

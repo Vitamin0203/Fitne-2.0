@@ -17,7 +17,7 @@ export function initTrainersSlider() {
       // when window width is >= 640px
       1200: {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 38,
       },
     },
 

@@ -36,16 +36,16 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  top: calc(50% - 160px);
+  top: calc(50% - 155px);
 
   @include vp-1200 {
-    top: calc(50% - 161px);
+    top: calc(50% - 152px);
   }
 
   @include vp-767 {
     width: 50px;
     height: 50px;
-    top: calc(50% - 146px);
+    top: calc(50% - 140px);
   }
 
   &:hover,
