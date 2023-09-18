@@ -80,7 +80,7 @@
 
   @include vp-767 {
     padding-top: 5px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
 }
 
@@ -112,7 +112,7 @@
 .gym__container {
   position: relative;
   display: flex;
-  padding-bottom: 237px;
+  padding-bottom: 236px;
   margin: 0 auto;
 
   @include vp-1200 {
@@ -121,7 +121,9 @@
   }
 
   @include vp-767 {
+    width: 100%;
     display: grid;
+    justify-content: stretch;
     flex-direction: column;
     padding-bottom: 70px;
   }
@@ -131,10 +133,14 @@
   position: relative;
 
   @include vp-767 {
-    padding-bottom: 41px;
+    padding-bottom: 40px;
   }
 }
 
 .gym__img {
   max-width: unset;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

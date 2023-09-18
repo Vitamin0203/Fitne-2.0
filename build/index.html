@@ -23,15 +23,17 @@
       <div class="header">
         <div class="header__centerer">
           <div class="header__logo">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-logo-desktop.webp 1x, img/header-logo-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/header-logo-tablet.webp 1x, img/header-logo-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/header-logo-phone.webp 1x, img/header-logo-phone@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/header-logo-desktop.png 1x, img/header-logo-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/header-logo-tablet.png 1x, img/header-logo-tablet@2x.png 2x">
-              <img class="header__image" src="./img/header-logo-phone.png" srcset="img/header-logo-phone@2x.png 2x" alt="Логотип компании">
-            </picture>
-            <a class="header__phone" href="#">
+            <a class="header__logo-img" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-logo-desktop.webp 1x, img/header-logo-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/header-logo-tablet.webp 1x, img/header-logo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/header-logo-phone.webp 1x, img/header-logo-phone@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/header-logo-desktop.png 1x, img/header-logo-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/header-logo-tablet.png 1x, img/header-logo-tablet@2x.png 2x">
+                <img class="header__image" src="./img/header-logo-phone.png" srcset="img/header-logo-phone@2x.png 2x" alt="Логотип компании">
+              </picture>
+            </a>
+            <a class="header__phone" href="tel:+78005555555">
               8-800-555-55-55
             </a>
           </div>
@@ -41,9 +43,11 @@
               <p>Групповые занятия</p>
               <p>Кардио-зона</p>
             </div>
-            <div class="header__location">
-              <h1>Омск</h1>
-              <p>Фитнес центр</p>
+            <div class="header__location-wrapper">
+              <div class="header__location">
+                <h1>Омск</h1>
+                <p>Фитнес центр</p>
+              </div>
               <a class="header__btn btn" href="#section1">Купить абонемент</a>
             </div>
             <div class="header__img">
@@ -109,9 +113,9 @@
         <div class="subscription__centerer">
           <h3 id="section1">Абонементы</h3>
           <div class="subscription__tabs">
-            <p>1 месяц</p>
-            <p>6 месяцев</p>
-            <p>12 месяцев</p>
+            <button class="subscription__tabs-btn">1 месяц</button>
+            <button class="subscription__tabs-btn">6 месяцев</button>
+            <button class="subscription__tabs-btn">12 месяцев</button>
           </div>
           <ul class="subscription__list">
             <li class="subscription__item">
@@ -438,17 +442,17 @@
           <div class="faq-wrapper">
             <div class="faq-wrapper__tabs" data-tabs="parent">
               <div class="faq-wrapper__triggers" data-tabs="controls">
-                <button class="faq__item" data-tabs="control">Центр</button>
+                <button class="faq__item  is-active" data-tabs="control">Центр</button>
                 <button class="faq__item" data-tabs="control">Абонемент</button>
-                <button class="faq__item is-active" data-tabs="control">Услуги</button>
+                <button class="faq__item" data-tabs="control">Услуги</button>
                 <button class="faq__item" data-tabs="control">Правила</button>
               </div>
               <div class="faq-wrapper__content" data-tabs="content">
                 <ul class="faq-wrapper__item" data-tabs="element" data-accordion="parent">
-                  <li class="faq-wrapper__list" data-accordion="element">
+                  <li class="faq-wrapper__list is-active" data-accordion="element">
                     <h4>Как стать членом фитнес-центра?
                       <button class="faq-wrapper__btn faq-wrapper__icon" data-accordion="button">
-                        <svg width="42" height="42">
+                        <svg  width="42" height="42">
                           <use class="faq-wrapper__svg icon-close" xlink:href="./img/sprite.svg#close"></use>
                           <use class="faq-wrapper__svg icon-open" xlink:href="./img/sprite.svg#open"></use>
                         </svg>
@@ -507,7 +511,7 @@
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-2">
-                  <li class="faq-wrapper__list ac" data-accordion="element">
+                  <li class="faq-wrapper__list is-active" data-accordion="element">
                     <h4>Занятия с тренером входят в абонемент?
                       <button class="faq-wrapper__btn faq-wrapper__icon" data-accordion="button">
                         <svg width="42" height="42">
@@ -569,7 +573,7 @@
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-3">
-                  <li class="faq-wrapper__list ac" data-accordion="element">
+                  <li class="faq-wrapper__list is-active" data-accordion="element">
                     <h4>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?
                       <button class="faq-wrapper__btn faq-wrapper__icon" data-accordion="button">
                         <svg width="42" height="42">
@@ -631,7 +635,7 @@
                   </li>
                 </ul>
                 <ul class="faq-wrapper__item accordion-container" data-tabs="element" data-accordion="parent" id="tab-4">
-                  <li class="faq-wrapper__list ac" data-accordion="element">
+                  <li class="faq-wrapper__list is-active" data-accordion="element">
                     <h4>Есть в фитнес-центре дресс-код?
                       <button class="faq-wrapper__btn faq-wrapper__icon" data-accordion="button">
                         <svg width="42" height="42">
@@ -782,7 +786,7 @@
               <use xlink:href="./img/sprite.svg#arrow-next"></use>
             </svg>
           </div>
-          <div class="reviews-box__arrow reviews-box__arrow--prev">
+          <div class="reviews-box__arrow reviews-box__arrow--prev reviews-box__arrow--prev-disabled">
             <svg class="reviews-box__svg" width="18" height="34">
               <use xlink:href="./img/sprite.svg#arrow-prev"></use>
             </svg>
@@ -827,13 +831,13 @@
               <div class="contacts-container__contact">
                 <div class="contacts-container__phone">
                   <h4>Телефон:</h4>
-                  <a class="contacts-container__link" href="#">
+                  <a class="contacts-container__link" href="tel:+78005555555">
                     8-800-555-55-55
                   </a>
                 </div>
                 <div class="contacts-container__email">
                   <h4>Email:</h4>
-                  <a class="contacts-container__link" href="#">omsk@supergym.ru</a>
+                  <a class="contacts-container__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </div>
               </div>
             </div>

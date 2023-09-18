@@ -2,14 +2,14 @@
   color: $color-default-white;
   background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
   margin: 0 auto;
-  padding: 38px 103px 50px;
+  padding: 38px 103px 51px;
 
   @include vp-1200 {
     padding: 36px 45px;
   }
 
   @include vp-767 {
-    padding: 15px 15px 77px 15px;
+    padding: 15px 15px 141px 15px;
   }
 }
 
@@ -24,7 +24,7 @@
   margin: 0 auto;
   width: calc(100% - 206px);
 
-  @include vp-1320 {
+  @include vp-1345 {
     position: relative;
   }
 
@@ -41,6 +41,31 @@
   }
 }
 
+.header__logo-img {
+  outline-offset: 5px;
+  outline-color: $color-default-white;
+}
+
+.header__image {
+  margin-top: 2px;
+  outline-offset: 5px;
+
+  &:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-default-white;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-default-white;
+  }
+}
 
 .header__phone {
   position: absolute;
@@ -52,6 +77,21 @@
   line-height: normal;
   letter-spacing: 0.78px;
   font-weight: 600;
+  outline: none;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    border-bottom: 1px solid $color-default-white;
+  }
 
   @include vp-1200 {
     top: unset;
@@ -79,6 +119,7 @@
   }
 
   @include vp-767 {
+    position: relative;
     padding-bottom: 0;
   }
 }
@@ -104,7 +145,7 @@
   @include vp-767 {
     font-size: 14px;
     padding-top: 193px;
-    margin-right: 0;
+    margin-right: 10px;
     padding-left: 0;
   }
 }
@@ -130,7 +171,7 @@
   @include vp-1200 {
     padding-top: 70px;
     padding-right: 26px;
-    padding-left: 18px;
+    padding-left: 25px;
   }
 
   @include vp-767 {
@@ -209,23 +250,27 @@
   padding: 18px 40px;
   background-color: transparent;
   border: $color-default-white solid 4px;
+  outline: none;
+  margin-left: 31px;
 
   @include vp-1200 {
     width: 190px;
     padding: 21px 15px;
-    margin-left: 6px;
+    margin-left: 25px;
   }
 
   @include vp-767 {
-    width: 290px;
-    padding: 21px 70px;
-    margin-left: -94px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 21px 0;
+    margin-left: 0;
   }
 
   &:hover,
   &:focus {
     background-color: $color-default-white;
-    color: $color-neon-blue;
+    color: #103aae;
   }
 
 

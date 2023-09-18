@@ -130,6 +130,7 @@
   padding-bottom: 1px;
   color: $color-default-white;
   margin-top: 188px;
+  outline: none;
 
   @include vp-1200 {
     margin-top: 188px;
@@ -245,7 +246,7 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: normal;
-    padding-top: 2px;
+    padding-top: 3px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -273,13 +274,14 @@
   text-transform: uppercase;
   margin-top: 71px;
   border-bottom: 1px solid #1c3374;
+  outline: none;
 
   @include vp-1200 {
     margin-top: 48px;
   }
 
   @include vp-767 {
-    margin-top: 27px;
+    margin-top: 26px;
   }
 
   &:hover {

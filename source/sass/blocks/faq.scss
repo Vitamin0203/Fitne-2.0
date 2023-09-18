@@ -45,6 +45,7 @@
 }
 
 .faq__item {
+  cursor: pointer;
   width: 260px;
   font-size: 18px;
   font-style: normal;
@@ -58,6 +59,7 @@
   background-color: transparent;
   color: #102654;
   border: 1px solid rgba(16, 38, 84, 0.2);
+  outline: none;
 
   @include vp-1200 {
     width: 162px;

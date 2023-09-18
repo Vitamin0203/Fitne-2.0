@@ -1,14 +1,39 @@
 .reviews-box {
   position: relative;
+  margin-left: 299px;
+  margin-right: 302px;
+
+  @include vp-1200 {
+    margin-left: 99px;
+    margin-right: 102px;
+  }
+
+  @include vp-767 {
+    margin-left: 47px;
+    margin-right: 47px;
+  }
+}
+
+.reviews-box__arrow {
+  cursor: pointer;
+}
+
+.reviews-box__arrow--prev-disabled {
+  pointer-events: none;
+
+  .reviews-box__svg {
+    stroke: rgba(16, 38, 84, 0.3);
+  }
 }
 
 .reviews-box__svg {
   position: relative;
   top: 9px;
   left: 20px;
+  stroke: #102654;
 
-  &:active path {
-    fill: $color-default-white;
+  &:active {
+    stroke: $color-default-white;
   }
 
   @include vp-767 {
@@ -21,10 +46,21 @@
 
 .reviews-box__arrow--next,
 .reviews-box__arrow--prev {
+  cursor: pointer;
   position: absolute;
   width: 56px;
   height: 56px;
   top: calc(50% - 28px);
+  border: 1px solid transparent;
+  outline: none;
+
+  &[aria-disabled="true"] {
+    pointer-events: none;
+
+    .reviews-box__svg {
+      stroke: rgba(16, 38, 84, 0.3);
+    }
+  }
 
   @include vp-1200 {
     top: calc(50% - 26px);

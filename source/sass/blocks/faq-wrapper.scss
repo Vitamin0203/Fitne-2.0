@@ -35,6 +35,7 @@
 }
 
 .faq-wrapper__list {
+  cursor: pointer;
   margin-top: 0;
   background-color: #f8f9fc;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
@@ -69,8 +70,8 @@
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.1px;
-  padding-top: 24px;
-  padding-bottom: 18px;
+  padding-top: 23px;
+  padding-bottom: 19px;
 
   @include vp-1200 {
     padding-top: 22px;
@@ -102,6 +103,7 @@
 }
 
 .faq-wrapper__btn {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -127,6 +129,17 @@
 
 .faq-wrapper__icon .icon-close {
   display: none;
+}
+
+.faq-wrapper__icon .icon-open {
+  fill: transparent;
+  stroke: #102654;
+
+  &:hover,
+  &:focus {
+    fill: #102654;
+    stroke: $color-default-white;
+  }
 }
 
 .faq-wrapper__list p {

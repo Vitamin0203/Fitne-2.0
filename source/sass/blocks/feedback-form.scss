@@ -143,6 +143,18 @@
   padding: 16px 0;
   background-color: transparent;
   border: 3px solid $color-default-white;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: #103aae;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: #102654;
+  }
 }
 
 .feedback-form .is-invalid {

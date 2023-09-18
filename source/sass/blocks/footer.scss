@@ -3,7 +3,7 @@
   position: relative;
   background-color: #030a1a;
   color: $color-default-white;
-  padding: 42px 104px 38px 103px;
+  padding: 42px 104px 36px 103px;
   align-items: center;
 
   @include vp-1200 {
@@ -21,6 +21,10 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @include vp-767 {
+    margin: unset;
+  }
 }
 
 .footer__list {
@@ -43,7 +47,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 7px;
+  padding-top: 5px;
 
   @include vp-1200 {
     font-size: 24px;
@@ -97,6 +101,15 @@
   line-height: normal;
   font-style: normal;
 
+  &:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+  }
 
   @include vp-767 {
     font-size: 16px;
@@ -108,11 +121,17 @@
   display: flex;
   justify-content: end;
   margin: 0;
+  margin-top: -1px;
   padding: 0;
+
+  @include vp-1200 {
+    margin-top: 1px;
+  }
 
   @include vp-767 {
     justify-content: start;
     padding-top: 13px;
+    margin-top: 0;
     margin-left: -160px;
   }
 }
@@ -130,7 +149,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     background-color: #103aae;
 
     .footer__svg {
@@ -140,6 +159,10 @@
 
   &:active {
     background-color: #102654;
+
+    .footer__svg {
+      fill: $color-default-white;
+    }
   }
 }
 

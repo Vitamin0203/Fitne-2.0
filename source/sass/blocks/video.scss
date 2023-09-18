@@ -94,7 +94,8 @@ img.video__media {
     opacity: 0.2;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $color-default-white;
     color: #102654;
 
@@ -125,6 +126,10 @@ img.video__media {
 
 .video--enabled {
   cursor: pointer;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .video--enabled .video__button {
