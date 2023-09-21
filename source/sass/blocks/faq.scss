@@ -46,6 +46,7 @@
 
 .faq__item {
   cursor: pointer;
+  user-select: none;
   width: 260px;
   font-size: 18px;
   font-style: normal;

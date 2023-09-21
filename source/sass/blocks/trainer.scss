@@ -1,8 +1,12 @@
 .trainer {
   padding-bottom: 102px;
+  padding-left: 65px;
+  padding-right: 65px;
 
   @include vp-1200 {
     padding-bottom: 101px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @include vp-767 {
@@ -47,6 +51,9 @@
 }
 
 .trainer__slider {
+  position: relative;
+  max-width: 1240px;
+
   @include vp-1200 {
     padding-left: 101px;
     padding-right: 101px;
@@ -128,16 +135,12 @@
   }
 }
 
-.trainer__slide:hover .trainer__description,
-.trainer__slide:focus .trainer__description {
+.trainer__hover:hover .trainer__description,
+.trainer__hover:focus .trainer__description {
   display: block;
-
-  @include vp-1200 {
-    display: none;
-  }
 }
 
-.trainer__slide:active .trainer__description {
+.trainer__hover:active .trainer__description {
   @include vp-1200 {
     display: block;
   }
@@ -205,29 +208,17 @@
   }
 }
 
-.trainer__slide:hover p {
+.trainer__hover:hover p {
   display: none;
-
-  @include vp-1200 {
-    display: block;
-  }
 }
 
-.trainer__slide:focus p {
+.trainer__hover:focus p {
   display: none;
 
-  @include vp-1200 {
-    display: block;
-  }
 }
 
-.trainer__slide:active p {
-  @include vp-1200 {
+.trainer__hover:active p {
+   @include vp-1200 {
     display: none;
   }
-}
-
-.trainer__btn {
-  position: relative;
-  max-width: 1240px;
 }

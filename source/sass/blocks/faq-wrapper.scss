@@ -142,6 +142,12 @@
   }
 }
 
+.faq-wrapper__list:hover .icon-open,
+.faq-wrapper__list:focus .icon-open {
+  fill: #102654;
+  stroke: $color-default-white;
+}
+
 .faq-wrapper__list p {
   font-size: 18px;
   font-weight: 300;

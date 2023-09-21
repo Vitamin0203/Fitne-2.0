@@ -75,6 +75,7 @@
 }
 
 .subscription__tabs-btn {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -134,60 +135,6 @@
   }
 }
 
-/* .subscription__tabs p {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  opacity: 0.5;
-  margin: 0;
-  padding-bottom: 14px;
-  margin-right: 46px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @include vp-1200 {
-    font-size: 18px;
-    line-height: 27px;
-    margin-right: 54px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 15px;
-    margin-right: 45px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #d10a42;
-      bottom: 0;
-    }
-    opacity: 1;
-  }
-}
- */
 .subscription__item--activ {
   content: "";
   display: block;
@@ -242,7 +189,7 @@
 
   @include vp-767 {
     width: 290px;
-    padding-bottom: 47px;
+    padding-bottom: 49px;
   }
 
   &:hover,
@@ -314,7 +261,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 }
 
@@ -376,6 +323,7 @@
 }
 
 .subscription__btn {
+  user-select: none;
   color: #102654;
   font-size: 12px;
   font-weight: 700;

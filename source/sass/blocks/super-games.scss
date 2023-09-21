@@ -16,7 +16,7 @@
 
 .super-games__centerer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
@@ -33,7 +33,7 @@
   padding: 51px 66px 87px 74px;
 
   @include vp-1200 {
-    padding: 14px 34px;
+    padding: 13px 33px;
     padding-bottom: 0;
   }
 
@@ -44,11 +44,11 @@
 
 .super-games__box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @include vp-1200 {
-    margin: auto;
+    max-width: 303px;
   }
 }
 
@@ -76,10 +76,10 @@
   @include vp-1200 {
     font-size: 48px;
     line-height: 96%;
-    padding-top: 13px;
+    padding-top: 14px;
     letter-spacing: 1.44px;
     padding-right: 25px;
-    padding-left: 18px;
+    padding-left: 19px;
   }
 
   @include vp-767 {
@@ -157,7 +157,7 @@
   @include vp-1200 {
     font-size: 24px;
     padding-left: 8px;
-    margin-top: -4px;
+    margin-top: -3px;
   }
 }
 
@@ -172,7 +172,7 @@
 
   @include vp-1200 {
     font-size: 10px;
-    padding-left: 3px;
+    padding-left: 4px;
     padding-top: 2px;
   }
 }
@@ -234,16 +234,18 @@
   @include vp-1200 {
     font-size: 12px;
     padding-top: 2px;
-    padding-left: 11px;
+    padding-left: 12px;
     padding-bottom: 30px;
   }
 
   @include vp-767 {
     padding-left: 12px;
+    padding-top: 1px;
   }
 }
 
 .super-games__btn {
+  user-select: none;
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
@@ -270,7 +272,7 @@
     letter-spacing: 0.5px;
     line-height: normal;
     padding: 12px 53px;
-    margin-left: 9px;
+    margin-left: 10px;
   }
 
   @include vp-767 {
@@ -283,7 +285,7 @@
   margin-left: -79px;
 
   @include vp-1200 {
-    margin-left: -80px;
+    margin-left: -77px;
   }
 
   @include vp-767 {
