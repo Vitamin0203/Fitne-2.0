@@ -2608,6 +2608,11 @@ button,
   width: 100%;
   border: none;
 }
+@media (max-width: 767px) {
+  .video__media {
+    position: relative;
+  }
+}
 
 img.video__media {
   opacity: 0.5;
@@ -3098,13 +3103,12 @@ img.video__media {
 }
 @media (max-width: 1199px) {
   .subscription__item {
-    width: 442px;
+    width: 100%;
     padding-bottom: 61px;
   }
 }
 @media (max-width: 767px) {
   .subscription__item {
-    width: 290px;
     padding-bottom: 49px;
   }
 }

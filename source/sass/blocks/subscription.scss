@@ -183,12 +183,11 @@
   border: 7px solid $color-default-white;
 
   @include vp-1200 {
-    width: 442px;
+    width: 100%;
     padding-bottom: 61px;
   }
 
   @include vp-767 {
-    width: 290px;
     padding-bottom: 49px;
   }
 
