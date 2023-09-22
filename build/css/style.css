@@ -3123,7 +3123,6 @@ img.video__media {
 .subscription__item:focus .subscription__btn {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   color: #ffffff;
-  border: none;
 }
 
 .subscription__item h4 {
@@ -3655,8 +3654,8 @@ img.video__media {
 
 .trainer {
   padding-bottom: 102px;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 102px;
+  padding-right: 102px;
 }
 @media (max-width: 1199px) {
   .trainer {
@@ -5067,7 +5066,7 @@ img.video__media {
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 71px 15px 41px 15px;
+    padding: 71px 15px 43px 15px;
     margin-left: 0;
   }
 }
@@ -5204,6 +5203,11 @@ img.video__media {
     font-size: 18px;
     padding-top: 5px;
     margin-bottom: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-container__link {
+    margin-bottom: 18px;
   }
 }
 

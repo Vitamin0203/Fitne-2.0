@@ -98,6 +98,10 @@
     padding-top: 5px;
     margin-bottom: 19px;
   }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
 }
 
 .contacts-container__email a {
