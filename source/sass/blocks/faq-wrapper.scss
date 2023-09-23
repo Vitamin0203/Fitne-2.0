@@ -104,6 +104,7 @@
 
 .faq-wrapper__btn {
   cursor: pointer;
+  outline: none;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -112,6 +113,12 @@
   @include vp-1200 {
     padding-top: 3px;
   }
+}
+
+.faq-wrapper__btn:hover .icon-open,
+.faq-wrapper__btn:focus .icon-open {
+  fill: #102654;
+  stroke: $color-default-white;
 }
 
 .faq-wrapper__icon {

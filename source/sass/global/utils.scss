@@ -66,6 +66,8 @@
   transition: none !important;
 }
 
-/* .js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-} */
+.swiper-slide-duplicate {
+  &:not(:not(&) ~ &) {
+    visibility: hidden;
+  }
+}
